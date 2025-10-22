@@ -58,13 +58,13 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* WhatsApp Button - Desktop */}
+          {/* Pedir Orçamento Button - Desktop */}
           <div className="hidden lg:block">
             <Button 
               className="btn-gradient-blue text-white"
-              onClick={() => window.open('https://wa.me/351913253290?text=Olá! Gostaria de solicitar um orçamento.', '_blank')}
+              onClick={() => scrollToSection('contactos')}
             >
-              WhatsApp
+              Pedir Orçamento
             </Button>
           </div>
 
