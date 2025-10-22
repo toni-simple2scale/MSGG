@@ -19,7 +19,7 @@ const Footer = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_823a2b97-7844-41bb-82d6-c92e96ffdff3/artifacts/8podbrez_LOGO%20MSGG.png" 
               alt="MSGG Logo" 
-              className="h-12 w-auto mb-4 brightness-0 invert"
+              className="h-16 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-gray-300 text-sm leading-relaxed">
               Mário Simões Gomes & Gomes, Lda. - Referência em tintas e vernizes para construção civil e automóvel desde há muitos anos.
