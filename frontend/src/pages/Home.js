@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-4 min-h-[700px] flex items-center">
+      <section className="relative pt-32 pb-32 px-4 min-h-[85vh] flex items-center mb-20">
         {/* Background Image */}
         <div 
           className="absolute inset-0 z-0"
