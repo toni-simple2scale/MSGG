@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { useForm } from 'react-hook-form';
-import { useWeb3Forms } from '@web3forms/react';
 import { toast } from 'sonner';
 import { products, testimonials, faqs, brands, aboutInfo, storeImages, contactInfo } from '../mock';
 
@@ -13,26 +12,9 @@ const Home = () => {
   const [formSubmitting, setFormSubmitting] = useState(false);
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-  const { submit } = useWeb3Forms({
-    access_key: 'YOUR_WEB3FORMS_ACCESS_KEY',
-    settings: {
-      from_name: 'MSGG Website',
-      subject: 'Nova Mensagem do Website MSGG',
-    },
-    onSuccess: (message) => {
-      toast.success('Mensagem enviada com sucesso! Entraremos em contacto em breve.');
-      reset();
-      setFormSubmitting(false);
-    },
-    onError: (error) => {
-      toast.error('Erro ao enviar mensagem. Por favor, tente novamente.');
-      setFormSubmitting(false);
-    },
-  });
-
   const onSubmit = async (data) => {
     setFormSubmitting(true);
-    // For demo purposes, open WhatsApp instead
+    // For demo purposes, open WhatsApp with pre-filled message
     const message = `Olá! Sou ${data.name}. ${data.message}`;
     window.open(`https://wa.me/351913253290?text=${encodeURIComponent(message)}`, '_blank');
     toast.success('A redirecionar para WhatsApp...');
