@@ -83,49 +83,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Package className="text-accent-blue" size={28} />
-                </div>
-                <CardTitle className="text-xl">Vasta Variedade</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Produtos de construção civil e repintura automóvel das melhores marcas do mercado.</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                  <Truck className="text-accent-orange" size={28} />
-                </div>
-                <CardTitle className="text-xl">Entregas Rápidas</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Serviço de entrega rápido e eficiente em toda a região de Lisboa e arredores.</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                  <Headphones className="text-accent-purple" size={28} />
-                </div>
-                <CardTitle className="text-xl">Assessoria Técnica</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Equipa especializada pronta a aconselhar na escolha dos melhores produtos.</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Products Section */}
       <section id="produtos" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
