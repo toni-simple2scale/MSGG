@@ -25,22 +25,46 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="hero-gradient pt-32 pb-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative pt-32 pb-20 px-4 min-h-[700px] flex items-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1542238060-646c7ed65622)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+
+        {/* Content */}
+        <div className="max-w-7xl mx-auto relative z-10 w-full">
+          <div className="max-w-3xl">
             <div className="fade-in">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 Soluções Completas em
-                <span className="text-accent-blue"> Tintas</span> e
-                <span className="text-accent-orange"> Vernizes</span>
+                <span className="text-blue-400"> Tintas</span> e
+                <span className="text-orange-400"> Vernizes</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl lg:text-2xl text-gray-100 mb-6 leading-relaxed drop-shadow-lg">
                 Especialistas em construção civil e repintura automóvel. Qualidade, variedade e assessoria técnica especializada.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              
+              {/* Phone Number */}
+              <a 
+                href="tel:219673174"
+                className="inline-flex items-center gap-3 text-2xl lg:text-3xl font-bold text-white mb-8 hover:text-blue-400 transition-colors drop-shadow-lg"
+              >
+                <Phone size={32} className="text-blue-400" />
+                219 673 174
+              </a>
+
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Button 
                   size="lg" 
-                  className="btn-gradient-blue text-white text-lg px-8 py-6"
+                  className="btn-gradient-blue text-white text-lg px-8 py-6 shadow-2xl"
                   onClick={() => document.getElementById('contactos').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Solicitar Orçamento
@@ -48,20 +72,12 @@ const Home = () => {
                 </Button>
                 <Button 
                   size="lg" 
-                  variant="outline"
-                  className="text-lg px-8 py-6 border-2 border-gray-300 hover:border-blue-500 hover:bg-blue-50"
+                  className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-6 shadow-2xl"
                   onClick={() => window.open('https://wa.me/351913253290?text=Olá! Gostaria de mais informações.', '_blank')}
                 >
                   WhatsApp
                 </Button>
               </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1585676737728-432f58d5fdba" 
-                alt="Tintas e Produtos" 
-                className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
-              />
             </div>
           </div>
         </div>
