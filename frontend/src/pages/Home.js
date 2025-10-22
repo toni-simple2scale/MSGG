@@ -489,6 +489,47 @@ const Home = () => {
                       <p className="text-gray-600">{contactInfo.address}</p>
                     </div>
                   </div>
+
+                  <div className="border-t pt-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <CheckCircle2 className="text-green-600" size={24} />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-semibold text-gray-900 mb-3">Horário de Funcionamento</h4>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between">
+                            <span className="text-gray-600">Segunda-feira</span>
+                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-gray-600">Terça-feira</span>
+                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-gray-600">Quarta-feira</span>
+                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-gray-600">Quinta-feira</span>
+                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-gray-600">Sexta-feira</span>
+                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-gray-600">Sábado</span>
+                            <span className="font-medium text-red-600">Encerrado</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-gray-600">Domingo</span>
+                            <span className="font-medium text-red-600">Encerrado</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
 
