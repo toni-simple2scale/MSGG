@@ -177,14 +177,7 @@ const Home = () => {
                       <CardDescription>{product.category}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-gray-600 text-sm mb-4">{product.description}</p>
-                      <Button 
-                        variant="outline" 
-                        className="w-full hover:bg-yellow-50 hover:border-yellow-500"
-                        onClick={() => window.open('https://wa.me/351913253290?text=Olá! Gostaria de informações sobre ' + product.name, '_blank')}
-                      >
-                        Solicitar Orçamento
-                      </Button>
+                      <p className="text-gray-600 text-sm">{product.description}</p>
                     </CardContent>
                   </Card>
                 ))}
