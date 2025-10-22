@@ -41,7 +41,7 @@ const Header = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_823a2b97-7844-41bb-82d6-c92e96ffdff3/artifacts/8podbrez_LOGO%20MSGG.png" 
               alt="MSGG Logo" 
-              className="h-14 w-auto"
+              className="h-20 w-auto"
             />
           </div>
 
