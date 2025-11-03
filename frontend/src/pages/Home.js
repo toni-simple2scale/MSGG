@@ -499,7 +499,14 @@ const Home = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Morada</h4>
-                      <p className="text-gray-600">{contactInfo.address}</p>
+                      <a 
+                        href="https://www.google.com/maps/search/?api=1&query=38.8133,-9.3633" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-purple-600 hover:text-purple-800 font-medium transition-colors"
+                      >
+                        {contactInfo.address}
+                      </a>
                     </div>
                   </div>
 
