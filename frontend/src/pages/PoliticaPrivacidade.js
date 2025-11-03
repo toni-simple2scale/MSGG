@@ -404,8 +404,8 @@ const PoliticaPrivacidade = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="text-orange-600" size={24} />
-                  <a href="tel:219673174" className="text-orange-600 hover:text-orange-800 font-medium transition-colors">
-                    219 673 174
+                  <a href="tel:+351219673174" className="text-orange-600 hover:text-orange-800 font-medium transition-colors">
+                    +351 219 673 174
                   </a>
                 </div>
               </div>
