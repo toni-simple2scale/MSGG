@@ -84,30 +84,30 @@ export const products = {
 export const testimonials = [
   {
     id: 1,
-    name: "João Silva",
-    company: "Silva Construções, Lda",
-    text: "Trabalho com a MSGG há mais de 10 anos. A qualidade dos produtos e o serviço de entrega rápida fazem toda a diferença nos nossos projetos.",
+    name: "CMV Cozinhas",
+    company: "",
+    text: "Profissionais, tal como esperado, da definição de profissionais, sempre simpáticos. Material de alta qualidade. Solução para qualquer problema. Assistência para os equipamentos que vendem e sabem sempre do que estão a falar. Loja altamente recomendável.",
     rating: 5
   },
   {
     id: 2,
-    name: "Ana Costa",
-    company: "AutoRepair Premium",
-    text: "Para repintura automóvel, a MSGG é a nossa escolha número um. A assessoria técnica é excecional e os produtos são de topo de gama.",
+    name: "Paulo Freitas",
+    company: "",
+    text: "Excelente casa de tintas!! Preço acessíveis, material de qualidade. Atendimento 5 estrelas pessoas super prestáveis esclarecem qualquer dúvida. Recomendo muito!",
     rating: 5
   },
   {
     id: 3,
-    name: "Pedro Rodrigues",
-    company: "Rodrigues & Filhos",
-    text: "A variedade de marcas e produtos disponíveis, aliada ao conhecimento da equipa, tornam a MSGG um parceiro indispensável para o nosso negócio.",
+    name: "José Miguel",
+    company: "",
+    text: "Loja com tudo de A a Z para fazer uma pintura no carro, ou na casa.",
     rating: 5
   },
   {
     id: 4,
-    name: "Maria Santos",
-    company: "Pinturas Artísticas MS",
-    text: "Profissionalismo e qualidade definem a MSGG. Sempre encontro o que preciso e a assessoria técnica ajuda-me a escolher os melhores produtos.",
+    name: "Domingos Ambrósio",
+    company: "",
+    text: "Sempre disponíveis para ajudar. Tintas de alta qualidade. Sempre prestaveis. 5 estrelas.",
     rating: 5
   }
 ];
