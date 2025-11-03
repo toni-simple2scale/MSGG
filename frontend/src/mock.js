@@ -176,7 +176,7 @@ export const brands = [
   {
     id: 2,
     name: "Duquebel",
-    logo: "https://via.placeholder.com/200x80/f3f4f6/374151?text=DUQUEBEL",
+    logo: "https://customer-assets.emergentagent.com/job_msgg-paints/artifacts/2vycgc8k_duquebel.jpg",
     description: "Referência em tintas e vernizes"
   },
   {
