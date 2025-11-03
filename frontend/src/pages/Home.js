@@ -302,26 +302,8 @@ const Home = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">O Que Dizem os Nossos Clientes</h2>
             <p className="text-xl text-gray-600">A confiança dos nossos clientes é a nossa maior conquista</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="testimonial-card">
-                <CardHeader>
-                  <div className="flex items-center gap-1 mb-3">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <CardDescription className="text-base text-gray-700 italic leading-relaxed">
-                    "{testimonial.text}"
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.company}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          
+          <TestimonialsCarousel testimonials={testimonials} />
         </div>
       </section>
 
