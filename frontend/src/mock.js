@@ -126,7 +126,7 @@ export const faqs = [
   {
     id: 3,
     question: "Como solicitar um orçamento?",
-    answer: "Pode solicitar orçamento através do formulário no nosso website, por telefone (219 673 174), por email (geral@mariosgomes.com) ou através do WhatsApp. Responderemos com a maior brevidade possível."
+    answer: "Pode solicitar orçamento através do formulário no nosso website, por telefone (+351 219 673 174), por email (geral@mariosgomes.com) ou através do WhatsApp. Responderemos com a maior brevidade possível."
   },
   {
     id: 4,
