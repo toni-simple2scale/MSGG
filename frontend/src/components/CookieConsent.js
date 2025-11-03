@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { X, Shield, Settings, BarChart3 } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 const CookieConsent = () => {
+  const location = useLocation();
   const [showBanner, setShowBanner] = useState(false);
   const [showCustomize, setShowCustomize] = useState(false);
   const [preferences, setPreferences] = useState({
@@ -14,16 +16,20 @@ const CookieConsent = () => {
 
   useEffect(() => {
     // Don't show banner on policy pages
-    const currentPath = window.location.pathname;
+    const currentPath = location.pathname;
     if (currentPath.includes('/politica-privacidade') || currentPath.includes('/politica-cookies')) {
+      setShowBanner(false);
       return;
     }
 
+    // Check if consent exists
     const consent = localStorage.getItem('msgg_cookie_consent');
     if (!consent) {
       setShowBanner(true);
+    } else {
+      setShowBanner(false);
     }
-  }, []);
+  }, [location.pathname]);
 
   const handleAcceptAll = () => {
     const allPreferences = {
