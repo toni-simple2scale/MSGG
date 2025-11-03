@@ -191,7 +191,7 @@ export const storeImages = [
 ];
 
 export const contactInfo = {
-  phone: "219 673 174",
+  phone: "+351 219 673 174",
   whatsapp: "+351913253290",
   email: "geral@mariosgomes.com",
   address: "Av. Combatentes do Ultramar, Arm. A - Lameiras, 2715-776 Terrugem",
