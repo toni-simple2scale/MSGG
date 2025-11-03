@@ -52,14 +52,23 @@ const Home = () => {
                 Especialistas em construção civil e repintura automóvel. Qualidade, variedade e assessoria técnica especializada.
               </p>
               
-              {/* Phone Number */}
-              <a 
-                href="tel:219673174"
-                className="inline-flex items-center gap-3 text-2xl lg:text-3xl font-bold text-white mb-8 hover:text-blue-400 transition-colors drop-shadow-lg"
-              >
-                <Phone size={32} className="text-blue-400" />
-                219 673 174
-              </a>
+              {/* Contact Info */}
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-8">
+                <a 
+                  href="tel:219673174"
+                  className="inline-flex items-center gap-3 text-xl lg:text-2xl font-bold text-white hover:text-blue-400 transition-colors drop-shadow-lg"
+                >
+                  <Phone size={28} className="text-blue-400" />
+                  219 673 174
+                </a>
+                <a 
+                  href="mailto:geral@mariosgomes.com"
+                  className="inline-flex items-center gap-3 text-xl lg:text-2xl font-bold text-white hover:text-orange-400 transition-colors drop-shadow-lg"
+                >
+                  <Mail size={28} className="text-orange-400" />
+                  geral@mariosgomes.com
+                </a>
+              </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Button 
