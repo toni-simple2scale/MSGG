@@ -487,7 +487,14 @@ const PoliticaCookies = () => {
               <div className="mt-6 text-sm text-gray-600">
                 <strong>Mário Simões Gomes & Gomes, Lda</strong><br />
                 NIF: 502 446 366<br />
-                Av. Combatentes do Ultramar, Arm. A - Lameiras, 2715-776 Terrugem
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=38.8133,-9.3633" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Av. Combatentes do Ultramar, Arm. A - Lameiras, 2715-776 Terrugem
+                </a>
               </div>
             </section>
           </div>
