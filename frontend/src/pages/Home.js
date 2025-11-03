@@ -474,7 +474,9 @@ const Home = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Telefone</h4>
-                      <p className="text-gray-600">{contactInfo.phone}</p>
+                      <a href="tel:219673174" className="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                        {contactInfo.phone}
+                      </a>
                       <p className="text-sm text-gray-500 mt-1">Chamada para rede fixa nacional</p>
                     </div>
                   </div>
@@ -485,7 +487,9 @@ const Home = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                      <p className="text-gray-600">{contactInfo.email}</p>
+                      <a href="mailto:geral@mariosgomes.com" className="text-orange-600 hover:text-orange-800 font-medium transition-colors">
+                        {contactInfo.email}
+                      </a>
                     </div>
                   </div>
 
