@@ -71,7 +71,14 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">{contactInfo.address}</span>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=38.8133,-9.3633" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
+                  {contactInfo.address}
+                </a>
               </li>
             </ul>
           </div>
