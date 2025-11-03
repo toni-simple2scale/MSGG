@@ -88,13 +88,14 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Horário</h3>
             <div className="flex items-start gap-3">
               <Clock size={18} className="mt-0.5 flex-shrink-0" />
-              <div className="text-gray-300 text-sm">
-                <p>De segunda a sexta:</p>
+              <div className="text-gray-300 text-sm space-y-1">
+                <p className="text-gray-300">De segunda a sexta:</p>
                 <p className="font-medium text-white">9:00h às 13:00h</p>
                 <p className="font-medium text-white">14:00h às 18:00h</p>
-                <p className="mt-2">Sábado:</p>
+                <p className="text-gray-300 mt-3">Sábado:</p>
                 <p className="font-medium text-white">9:00h às 13:00h</p>
-                <p className="mt-2 text-gray-400">Domingo: Encerrado</p>
+                <p className="text-gray-300 mt-3">Domingo:</p>
+                <p className="font-medium text-white">Encerrado</p>
               </div>
             </div>
           </div>
