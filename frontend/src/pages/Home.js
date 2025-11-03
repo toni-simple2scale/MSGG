@@ -474,7 +474,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Telefone</h4>
-                      <a href="tel:219673174" className="text-gray-900 hover:text-blue-600 transition-colors">
+                      <a href="tel:+351219673174" className="text-gray-900 hover:text-blue-600 transition-colors">
                         {contactInfo.phone}
                       </a>
                       <p className="text-sm text-gray-500 mt-1">Chamada para rede fixa nacional</p>
