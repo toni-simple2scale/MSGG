@@ -13,6 +13,12 @@ const CookieConsent = () => {
   });
 
   useEffect(() => {
+    // Don't show banner on policy pages
+    const currentPath = window.location.pathname;
+    if (currentPath.includes('/politica-privacidade') || currentPath.includes('/politica-cookies')) {
+      return;
+    }
+
     const consent = localStorage.getItem('msgg_cookie_consent');
     if (!consent) {
       setShowBanner(true);
