@@ -162,7 +162,7 @@ export const faqs = [
   {
     id: 6,
     question: "Qual é o horário de funcionamento?",
-    answer: "Estamos abertos de segunda a sexta-feira das 8h30 às 18h00 e aos sábados das 9h00 às 13h00. Encerramos aos domingos e feriados."
+    answer: "Estamos abertos de segunda a sexta-feira das 9:00h às 13:00h e das 14:00h às 18:00h. Aos sábados das 9:00h às 13:00h. Encerramos aos domingos e feriados."
   }
 ];
 
