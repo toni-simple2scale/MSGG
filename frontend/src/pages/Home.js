@@ -542,19 +542,6 @@ const Home = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-none shadow-lg bg-gradient-to-br from-green-50 to-emerald-50">
-                <CardContent className="py-8">
-                  <h4 className="font-semibold text-gray-900 mb-4 text-lg">Preferência por WhatsApp?</h4>
-                  <p className="text-gray-600 mb-4">Contacte-nos diretamente pelo WhatsApp para respostas rápidas!</p>
-                  <Button 
-                    className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-6 text-lg"
-                    onClick={() => window.open('https://wa.me/351913253290?text=Olá! Gostaria de mais informações sobre a MSGG.', '_blank')}
-                  >
-                    Abrir WhatsApp
-                  </Button>
-                </CardContent>
-              </Card>
-
               {/* Map */}
               <Card className="border-none shadow-lg overflow-hidden">
                 <div className="h-64">
