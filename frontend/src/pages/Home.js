@@ -55,11 +55,11 @@ const Home = () => {
               {/* Contact Info */}
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-8">
                 <a 
-                  href="tel:219673174"
+                  href="tel:+351219673174"
                   className="inline-flex items-center gap-3 text-xl lg:text-2xl font-bold text-white hover:text-blue-400 transition-colors drop-shadow-lg"
                 >
                   <Phone size={28} className="text-blue-400" />
-                  219 673 174
+                  +351 219 673 174
                 </a>
                 <a 
                   href="mailto:geral@mariosgomes.com"
