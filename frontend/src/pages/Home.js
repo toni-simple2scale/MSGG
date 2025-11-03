@@ -519,28 +519,12 @@ const Home = () => {
                         <h4 className="font-semibold text-gray-900 mb-3">Horário de Funcionamento</h4>
                         <div className="space-y-2 text-sm">
                           <div className="flex justify-between">
-                            <span className="text-gray-600">Segunda-feira</span>
-                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
-                          </div>
-                          <div className="flex justify-between">
-                            <span className="text-gray-600">Terça-feira</span>
-                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
-                          </div>
-                          <div className="flex justify-between">
-                            <span className="text-gray-600">Quarta-feira</span>
-                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
-                          </div>
-                          <div className="flex justify-between">
-                            <span className="text-gray-600">Quinta-feira</span>
-                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
-                          </div>
-                          <div className="flex justify-between">
-                            <span className="text-gray-600">Sexta-feira</span>
-                            <span className="font-medium text-gray-900">9h-13h, 14h-18h</span>
+                            <span className="text-gray-600">De segunda a sexta</span>
+                            <span className="font-medium text-gray-900">9:00h às 13:00h - 14:00h às 18:00h</span>
                           </div>
                           <div className="flex justify-between">
                             <span className="text-gray-600">Sábado</span>
-                            <span className="font-medium text-red-600">Encerrado</span>
+                            <span className="font-medium text-gray-900">9:00h às 13:00h</span>
                           </div>
                           <div className="flex justify-between">
                             <span className="text-gray-600">Domingo</span>
