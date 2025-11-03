@@ -52,7 +52,14 @@ const PoliticaPrivacidade = () => {
                   </div>
                   <div className="flex items-start gap-2">
                     <MapPin size={18} className="mt-1 flex-shrink-0" />
-                    <span>Av. Combatentes do Ultramar, Arm. A - Lameiras, 2715-776 Terrugem</span>
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=38.8133,-9.3633" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline"
+                    >
+                      Av. Combatentes do Ultramar, Arm. A - Lameiras, 2715-776 Terrugem
+                    </a>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail size={18} />
