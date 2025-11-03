@@ -474,7 +474,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Telefone</h4>
-                      <a href="tel:219673174" className="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                      <a href="tel:219673174" className="text-gray-900 hover:text-blue-600 transition-colors">
                         {contactInfo.phone}
                       </a>
                       <p className="text-sm text-gray-500 mt-1">Chamada para rede fixa nacional</p>
@@ -487,7 +487,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                      <a href="mailto:geral@mariosgomes.com" className="text-orange-600 hover:text-orange-800 font-medium transition-colors">
+                      <a href="mailto:geral@mariosgomes.com" className="text-gray-900 hover:text-orange-600 transition-colors">
                         {contactInfo.email}
                       </a>
                     </div>
@@ -503,7 +503,7 @@ const Home = () => {
                         href="https://www.google.com/maps/search/?api=1&query=38.8133,-9.3633" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 font-medium transition-colors"
+                        className="text-gray-900 hover:text-purple-600 transition-colors"
                       >
                         {contactInfo.address}
                       </a>
