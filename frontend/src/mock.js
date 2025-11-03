@@ -188,7 +188,7 @@ export const brands = [
   {
     id: 4,
     name: "SPRINT",
-    logo: "https://via.placeholder.com/200x80/f3f4f6/374151?text=SPRINT",
+    logo: "https://customer-assets.emergentagent.com/job_msgg-paints/artifacts/vectqpi2_ChatGPT%20Image%20Nov%203%2C%202025%2C%2008_17_24%20PM.png",
     description: "Inovação em produtos automotivos"
   }
 ];
