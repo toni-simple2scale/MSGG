@@ -1,12 +1,93 @@
-import React, { useState } from 'react';
-import { Phone, Mail, MapPin, ArrowRight, Star, Package, Truck, Headphones, CheckCircle2 } from 'lucide-react';
+import React, { useState, useCallback, useEffect } from 'react';
+import { Phone, Mail, MapPin, ArrowRight, Star, Package, Truck, Headphones, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 import { products, testimonials, faqs, brands, aboutInfo, storeImages, contactInfo } from '../mock';
+
+const TestimonialsCarousel = ({ testimonials }) => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' }, [Autoplay({ delay: 5000, stopOnInteraction: false })]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on('select', onSelect);
+    return () => emblaApi.off('select', onSelect);
+  }, [emblaApi, onSelect]);
+
+  return (
+    <div className="relative">
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex gap-6">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.33%] min-w-0">
+              <Card className="testimonial-card h-full">
+                <CardHeader>
+                  <div className="flex items-center gap-1 mb-3">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <CardDescription className="text-base text-gray-700 italic leading-relaxed">
+                    "{testimonial.text}"
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                  {testimonial.company && <p className="text-sm text-gray-500">{testimonial.company}</p>}
+                </CardContent>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Navigation Buttons */}
+      <button
+        onClick={scrollPrev}
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors z-10"
+        aria-label="Anterior"
+      >
+        <ChevronLeft className="text-gray-900" size={24} />
+      </button>
+      <button
+        onClick={scrollNext}
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors z-10"
+        aria-label="Próximo"
+      >
+        <ChevronRight className="text-gray-900" size={24} />
+      </button>
+
+      {/* Dots */}
+      <div className="flex justify-center gap-2 mt-8">
+        {testimonials.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => emblaApi && emblaApi.scrollTo(index)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              index === selectedIndex ? 'bg-blue-600 w-8' : 'bg-gray-300'
+            }`}
+            aria-label={`Ir para testemunho ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const Home = () => {
   const [formSubmitting, setFormSubmitting] = useState(false);
