@@ -109,6 +109,27 @@ export const testimonials = [
     company: "",
     text: "Sempre disponíveis para ajudar. Tintas de alta qualidade. Sempre prestaveis. 5 estrelas.",
     rating: 5
+  },
+  {
+    id: 5,
+    name: "Daniel Miguel",
+    company: "",
+    text: "Serviço impecável! Prestáveis e sempre com boa disposição.",
+    rating: 5
+  },
+  {
+    id: 6,
+    name: "Maria do Rosário Ferreira",
+    company: "",
+    text: "Excelente serviço ao cliente. Simpatia e competência. Ampla gama de produtos. Recomendo.",
+    rating: 5
+  },
+  {
+    id: 7,
+    name: "Pedro C.",
+    company: "",
+    text: "Excelente serviço, profissional!",
+    rating: 5
   }
 ];
 
