@@ -60,6 +60,82 @@ const getProductIcon = (productId) => {
   return iconMap[productId] || Package;
 };
 
+const BrandsCarousel = ({ brands }) => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' }, [Autoplay({ delay: 3000, stopOnInteraction: false })]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on('select', onSelect);
+    return () => emblaApi.off('select', onSelect);
+  }, [emblaApi, onSelect]);
+
+  return (
+    <div className="relative">
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex gap-6">
+          {brands.map((brand) => (
+            <div key={brand.id} className="flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] lg:flex-[0_0_25%] min-w-0">
+              <Card className="brand-card text-center h-full">
+                <CardHeader>
+                  <div className="flex items-center justify-center h-24 mb-4">
+                    <img 
+                      src={brand.logo} 
+                      alt={brand.name} 
+                      className="max-h-20 w-auto object-contain"
+                    />
+                  </div>
+                  <CardTitle className="text-lg">{brand.name}</CardTitle>
+                  <CardDescription>{brand.description}</CardDescription>
+                </CardHeader>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Navigation Buttons */}
+      <button
+        onClick={scrollPrev}
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10"
+        aria-label="Marca anterior"
+      >
+        <ChevronLeft size={24} className="text-gray-600" />
+      </button>
+      <button
+        onClick={scrollNext}
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10"
+        aria-label="Próxima marca"
+      >
+        <ChevronRight size={24} className="text-gray-600" />
+      </button>
+
+      {/* Dots */}
+      <div className="flex justify-center gap-2 mt-6">
+        {brands.map((_, index) => (
+          <button
+            key={index}
+            className={`w-2 h-2 rounded-full transition-all ${
+              index === selectedIndex ? 'bg-accent-blue w-8' : 'bg-gray-300'
+            }`}
+            onClick={() => emblaApi && emblaApi.scrollTo(index)}
+            aria-label={`Ir para marca ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const TestimonialsCarousel = ({ testimonials }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' }, [Autoplay({ delay: 5000, stopOnInteraction: false })]);
   const [selectedIndex, setSelectedIndex] = useState(0);
