@@ -409,7 +409,7 @@ export const brands = [
     id: 13,
     name: "Tintal",
     logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/4b4b8j2e_logo_news-1.jpg",
-    description: "Produtos de reparação automotiva"
+    description: "Tintas de qualidade superior"
   },
   {
     id: 14,
