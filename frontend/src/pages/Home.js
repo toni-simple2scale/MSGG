@@ -693,55 +693,67 @@ const Home = () => {
               variants={staggerContainer}
               className="space-y-8"
             >
-              <Card className="border-none shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-2xl">A Nossa História</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 leading-relaxed">{aboutInfo.history}</p>
-                </CardContent>
-              </Card>
+              <motion.div variants={scaleIn}>
+                <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <CardHeader>
+                    <CardTitle className="text-2xl">A Nossa História</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 leading-relaxed">{aboutInfo.history}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
 
-              <Card className="border-none shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-2xl">Missão</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 leading-relaxed">{aboutInfo.mission}</p>
-                </CardContent>
-              </Card>
+              <motion.div variants={scaleIn}>
+                <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <CardHeader>
+                    <CardTitle className="text-2xl">Missão</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 leading-relaxed">{aboutInfo.mission}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
 
-              <Card className="border-none shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-2xl">Os Nossos Valores</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    {aboutInfo.values.map((value, index) => (
-                      <div key={index} className="flex items-center gap-3">
-                        <CheckCircle2 className="text-accent-blue flex-shrink-0" size={20} />
-                        <span className="text-gray-700">{value}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+              <motion.div variants={scaleIn}>
+                <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <CardHeader>
+                    <CardTitle className="text-2xl">Os Nossos Valores</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {aboutInfo.values.map((value, index) => (
+                        <div key={index} className="flex items-center gap-3">
+                          <CheckCircle2 className="text-accent-blue flex-shrink-0" size={20} />
+                          <span className="text-gray-700">{value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </motion.div>
 
             {/* Right side - Image */}
-            <div className="lg:sticky lg:top-24">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeIn}
+              className="lg:sticky lg:top-24"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                 <img 
                   src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800" 
                   alt="MSGG - Equipa e Instalações" 
-                  className="w-full h-[600px] object-cover"
+                  className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
                   <h3 className="text-2xl font-bold text-white mb-2">35 Anos de Experiência</h3>
                   <p className="text-gray-200">Compromisso com a excelência e qualidade</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
