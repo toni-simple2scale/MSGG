@@ -103,11 +103,19 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-gray-700">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
             <p className="text-gray-400 text-sm">
               © {new Date().getFullYear()} Mário Simões Gomes & Gomes, Lda. Todos os direitos reservados.
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
+              <a 
+                href="/informacoes-legais" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors text-sm underline"
+              >
+                Informações Legais
+              </a>
               <a 
                 href="/politica-privacidade" 
                 target="_blank"
@@ -125,6 +133,27 @@ const Footer = () => {
                 Política de Cookies
               </a>
             </div>
+          </div>
+          
+          {/* Livro de Reclamações */}
+          <div className="flex justify-center">
+            <a 
+              href="https://www.livroreclamacoes.pt/Inicio/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-gray-900 px-6 py-3 rounded-lg transition-colors shadow-lg"
+            >
+              <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" fill="none"/>
+                <path d="M4 4h16v16H4V4z" fill="#E31E24"/>
+                <path d="M4 4h16v8H4V4z" fill="#003DA5"/>
+                <rect x="6" y="6" width="12" height="2" fill="white"/>
+                <rect x="6" y="9" width="12" height="1.5" fill="white"/>
+                <rect x="6" y="14" width="12" height="1.5" fill="white"/>
+                <rect x="6" y="16.5" width="8" height="1.5" fill="white"/>
+              </svg>
+              <span className="font-semibold">Livro de Reclamações</span>
+            </a>
           </div>
         </div>
       </div>
