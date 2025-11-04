@@ -279,6 +279,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <SkeletonShimmer />
       {/* Hero Section */}
       <section className="relative pt-32 pb-32 px-4 min-h-[85vh] flex items-center">
         {/* Background Image */}
