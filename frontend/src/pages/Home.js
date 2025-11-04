@@ -708,6 +708,64 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Stats Section with Animated Numbers */}
+      <section className="py-20 bg-gradient-to-br from-orange-600 to-red-600 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
+            className="grid grid-cols-2 md:grid-cols-4 gap-8"
+          >
+            <motion.div variants={fadeInUp} className="text-center">
+              <div className="mb-4">
+                <Award className="w-12 h-12 mx-auto text-white" />
+              </div>
+              <div className="text-5xl md:text-6xl font-bold text-white mb-2">
+                <AnimatedCounter value={35} suffix="+" />
+              </div>
+              <p className="text-white/90 text-lg font-medium">Anos de Experiência</p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="text-center">
+              <div className="mb-4">
+                <Star className="w-12 h-12 mx-auto text-white" />
+              </div>
+              <div className="text-5xl md:text-6xl font-bold text-white mb-2">
+                <AnimatedCounter value={15} suffix="+" />
+              </div>
+              <p className="text-white/90 text-lg font-medium">Marcas Representadas</p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="text-center">
+              <div className="mb-4">
+                <Users className="w-12 h-12 mx-auto text-white" />
+              </div>
+              <div className="text-5xl md:text-6xl font-bold text-white mb-2">
+                <AnimatedCounter value={1000} suffix="+" />
+              </div>
+              <p className="text-white/90 text-lg font-medium">Clientes Satisfeitos</p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="text-center">
+              <div className="mb-4">
+                <TrendingUp className="w-12 h-12 mx-auto text-white" />
+              </div>
+              <div className="text-5xl md:text-6xl font-bold text-white mb-2">
+                <AnimatedCounter value={24} />h
+              </div>
+              <p className="text-white/90 text-lg font-medium">Entregas Rápidas</p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Brands Section */}
       <section id="marcas" className="py-20 bg-gray-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4">
