@@ -489,6 +489,34 @@ const Home = () => {
               <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {products.sprays.map((product) => {
                   const IconComponent = getProductIcon(product.id);
+                  
+                  // Special styling for "Mais Opções"
+                  if (product.name === "Mais Opções") {
+                    return (
+                      <motion.div key={product.id} variants={scaleIn} className="md:col-span-2 lg:col-span-3">
+                        <div className="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-purple-500 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                              <IconComponent className="text-purple-600" size={24} />
+                            </div>
+                            <div className="flex-1">
+                              <h3 className="text-lg font-semibold text-gray-900 mb-1">{product.name}</h3>
+                              <p className="text-gray-600">{product.description}</p>
+                            </div>
+                            <Button 
+                              variant="outline" 
+                              className="border-purple-500 text-purple-700 hover:bg-purple-500 hover:text-white transition-colors"
+                              onClick={() => document.getElementById('contactos').scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              Contactar
+                              <ArrowRight className="ml-2" size={16} />
+                            </Button>
+                          </div>
+                        </div>
+                      </motion.div>
+                    );
+                  }
+                  
                   return (
                     <motion.div key={product.id} variants={scaleIn}>
                       <Card className="product-card h-full hover:shadow-xl transition-shadow duration-300">
