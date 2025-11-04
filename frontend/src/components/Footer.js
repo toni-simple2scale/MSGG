@@ -22,7 +22,7 @@ const Footer = () => {
               className="h-16 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-gray-300 text-sm leading-relaxed">
-              Mário Simões Gomes & Gomes, Lda. - Referência em tintas e vernizes para construção civil e automóvel com 35 anos de experiência.
+              Mário Simões Gomes & Gomes, Lda. - Especialistas em tintas e vernizes para repintura automóvel e construção civil com 35 anos de experiência.
             </p>
           </div>
 
