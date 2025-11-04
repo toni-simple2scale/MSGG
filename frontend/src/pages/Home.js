@@ -443,7 +443,8 @@ const Home = () => {
                     </motion.div>
                   );
                 })}
-              </motion.div>
+                </motion.div>
+              )}
             </TabsContent>
 
             <TabsContent value="construcao">
