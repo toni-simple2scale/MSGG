@@ -512,45 +512,57 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Package className="text-accent-blue" size={28} />
-                </div>
-                <CardTitle className="text-xl">Vasta Variedade</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Produtos de repintura automóvel e construção civil das melhores marcas do mercado.</p>
-              </CardContent>
-            </Card>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
+            className="grid md:grid-cols-3 gap-8"
+          >
+            <motion.div variants={scaleIn}>
+              <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full">
+                <CardHeader>
+                  <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 hover:rotate-12">
+                    <Package className="text-accent-blue" size={28} />
+                  </div>
+                  <CardTitle className="text-xl">Vasta Variedade</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">Produtos de repintura automóvel e construção civil das melhores marcas do mercado.</p>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                  <Truck className="text-accent-orange" size={28} />
-                </div>
-                <CardTitle className="text-xl">Entregas Rápidas</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Serviço de entrega rápido e eficiente em toda a região de Lisboa e arredores.</p>
-              </CardContent>
-            </Card>
+            <motion.div variants={scaleIn}>
+              <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full">
+                <CardHeader>
+                  <div className="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 hover:rotate-12">
+                    <Truck className="text-accent-orange" size={28} />
+                  </div>
+                  <CardTitle className="text-xl">Entregas Rápidas</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">Serviço de entrega rápido e eficiente em toda a região de Lisboa e arredores.</p>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                  <Headphones className="text-accent-purple" size={28} />
-                </div>
-                <CardTitle className="text-xl">Assessoria Técnica</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Equipa especializada pronta a aconselhar na escolha dos melhores produtos.</p>
-              </CardContent>
-            </Card>
-          </div>
+            <motion.div variants={scaleIn}>
+              <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full">
+                <CardHeader>
+                  <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 hover:rotate-12">
+                    <Headphones className="text-accent-purple" size={28} />
+                  </div>
+                  <CardTitle className="text-xl">Assessoria Técnica</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">Equipa especializada pronta a aconselhar na escolha dos melhores produtos.</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
