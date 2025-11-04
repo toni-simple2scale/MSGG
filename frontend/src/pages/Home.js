@@ -307,7 +307,10 @@ const Home = () => {
               </motion.p>
               
               {/* Contact Info */}
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-8">
+              <motion.div 
+                variants={fadeInUp}
+                className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-8"
+              >
                 <a 
                   href="tel:+351219673174"
                   className="inline-flex items-center gap-3 text-xl lg:text-2xl font-bold text-white hover:text-blue-400 transition-colors drop-shadow-lg"
@@ -322,19 +325,22 @@ const Home = () => {
                   <Mail size={28} className="text-orange-400" />
                   geral@mariosgomes.com
                 </a>
-              </div>
+              </motion.div>
 
-              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+              <motion.div 
+                variants={fadeInUp}
+                className="flex flex-col sm:flex-row gap-4 mt-8"
+              >
                 <Button 
                   size="lg" 
-                  className="btn-gradient-blue text-white text-lg px-8 py-6 shadow-2xl"
+                  className="btn-gradient-blue text-white text-lg px-8 py-6 shadow-2xl hover:scale-105 transition-transform"
                   onClick={() => document.getElementById('contactos').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Solicitar Orçamento
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </section>
