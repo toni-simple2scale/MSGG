@@ -103,10 +103,26 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-gray-700 text-center">
-          <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Mário Simões Gomes & Gomes, Lda. Todos os direitos reservados.
-          </p>
+        <div className="mt-12 pt-8 border-t border-gray-700">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-400 text-sm">
+              © {new Date().getFullYear()} Mário Simões Gomes & Gomes, Lda. Todos os direitos reservados.
+            </p>
+            <div className="flex gap-6">
+              <Link 
+                to="/politica-privacidade" 
+                className="text-gray-300 hover:text-white transition-colors text-sm underline"
+              >
+                Política de Privacidade
+              </Link>
+              <Link 
+                to="/politica-cookies" 
+                className="text-gray-300 hover:text-white transition-colors text-sm underline"
+              >
+                Política de Cookies
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
