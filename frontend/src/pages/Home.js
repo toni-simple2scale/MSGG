@@ -169,7 +169,7 @@ const Home = () => {
       <section id="produtos" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossos Produtos</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Os Nossos Produtos</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Descubra a nossa ampla gama de produtos para todas as suas necessidades
             </p>
