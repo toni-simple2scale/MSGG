@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CookieConsent from "./components/CookieConsent";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollProgressBar from "./components/ScrollProgressBar";
 import Home from "./pages/Home";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import PoliticaCookies from "./pages/PoliticaCookies";
