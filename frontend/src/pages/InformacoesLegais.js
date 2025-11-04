@@ -36,26 +36,22 @@ const InformacoesLegais = () => {
                 
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">NIF:</p>
-                  <p className="text-blue-600 font-mono">[NIF DA EMPRESA]</p>
-                  <p className="text-xs text-gray-500 mt-1">* Por favor, preencher com o NIF correto</p>
+                  <p className="text-gray-700 font-mono">502446366</p>
                 </div>
 
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">Capital Social:</p>
-                  <p className="text-blue-600">[CAPITAL SOCIAL] €</p>
-                  <p className="text-xs text-gray-500 mt-1">* Por favor, preencher com o capital social</p>
+                  <p className="text-gray-700">€ 104.747,55</p>
                 </div>
 
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">Matrícula/Registo:</p>
-                  <p className="text-blue-600">[NÚMERO DE MATRÍCULA]</p>
-                  <p className="text-xs text-gray-500 mt-1">* Número de registo na Conservatória</p>
+                  <p className="text-gray-700">502446366</p>
                 </div>
 
                 <div className="md:col-span-2">
                   <p className="font-semibold text-gray-900 mb-1">Conservatória do Registo Comercial:</p>
-                  <p className="text-blue-600">[CONSERVATÓRIA - ex: Sintra]</p>
-                  <p className="text-xs text-gray-500 mt-1">* Conservatória onde a empresa está registada</p>
+                  <p className="text-gray-700">Sintra</p>
                 </div>
               </div>
             </div>
