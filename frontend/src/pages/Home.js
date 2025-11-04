@@ -259,6 +259,15 @@ const TestimonialsCarousel = ({ testimonials }) => {
 const Home = () => {
   const [formSubmitting, setFormSubmitting] = useState(false);
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Simulate loading delay for skeleton demonstration
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 800);
+    return () => clearTimeout(timer);
+  }, []);
 
   const onSubmit = async (data) => {
     setFormSubmitting(true);
