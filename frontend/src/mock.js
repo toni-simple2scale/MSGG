@@ -194,8 +194,8 @@ export const brands = [
 ];
 
 export const aboutInfo = {
-  history: "A Mário Simões Gomes & Gomes, Lda. é uma empresa familiar portuguesa com sede em Sintra, que ao longo de 35 anos de atividade se estabeleceu como referência no fornecimento de tintas, vernizes e produtos relacionados. Com uma vasta experiência no sector, a MSGG tem acompanhado a evolução tecnológica dos produtos de pintura, mantendo sempre o compromisso com a qualidade e o serviço personalizado.",
-  mission: "A nossa missão é fornecer aos nossos clientes, sejam profissionais ou particulares, produtos de excelência para construção civil e repintura automóvel, aliados a um serviço de assessoria técnica especializada e entregas rápidas.",
+  history: "A Mário Simões Gomes & Gomes, Lda. é uma empresa familiar portuguesa com sede em Sintra, que ao longo de 35 anos de atividade se estabeleceu como referência no fornecimento de tintas e vernizes para repintura automóvel. Especialistas em soluções automotivas, a MSGG também oferece produtos de qualidade para construção civil. Com uma vasta experiência no sector, temos acompanhado a evolução tecnológica dos produtos de pintura, mantendo sempre o compromisso com a qualidade e o serviço personalizado.",
+  mission: "A nossa missão é fornecer aos nossos clientes, sejam profissionais ou particulares, produtos de excelência para repintura automóvel e construção civil, aliados a um serviço de assessoria técnica especializada e entregas rápidas.",
   values: [
     "Qualidade dos produtos",
     "Serviço personalizado",
