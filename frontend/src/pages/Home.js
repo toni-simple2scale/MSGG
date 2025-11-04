@@ -251,6 +251,7 @@ const Home = () => {
               <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 Especialistas em
                 <span className="text-orange-400"> Pintura Automóvel</span>
+                <span className="text-white"> e Construção Civil</span>
               </h1>
               <p className="text-xl lg:text-2xl text-gray-100 mb-6 leading-relaxed drop-shadow-lg">
                 Referência em tintas e vernizes para repintura automóvel e construção civil. 35 anos de experiência, qualidade e assessoria técnica especializada.
