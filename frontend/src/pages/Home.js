@@ -182,12 +182,31 @@ const Home = () => {
             </p>
           </div>
 
-          <Tabs defaultValue="construcao" className="w-full">
+          <Tabs defaultValue="automovel" className="w-full">
             <TabsList className="grid w-full md:w-auto md:inline-grid grid-cols-3 mb-12 h-auto">
-              <TabsTrigger value="construcao" className="text-base px-8 py-3">Construção Civil</TabsTrigger>
               <TabsTrigger value="automovel" className="text-base px-8 py-3">Automóvel</TabsTrigger>
+              <TabsTrigger value="construcao" className="text-base px-8 py-3">Construção Civil</TabsTrigger>
               <TabsTrigger value="acessorios" className="text-base px-8 py-3">Acessórios</TabsTrigger>
             </TabsList>
+
+            <TabsContent value="automovel">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {products.automovel.map((product) => (
+                  <Card key={product.id} className="product-card">
+                    <CardHeader>
+                      <div className="w-12 h-12 bg-gradient-to-br from-red-100 to-orange-200 rounded-lg flex items-center justify-center mb-3">
+                        <Package className="text-accent-red" size={24} />
+                      </div>
+                      <CardTitle className="text-lg">{product.name}</CardTitle>
+                      <CardDescription>{product.category}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 text-sm">{product.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
 
             <TabsContent value="construcao">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
