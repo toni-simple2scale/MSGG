@@ -43,6 +43,12 @@ export const products = {
       name: "Afinação Simples com Espectrofotômetro",
       description: "Leitura precisa para correspondência perfeita de cor",
       category: "Afinação"
+    },
+    {
+      id: 40,
+      name: "Mais Opções",
+      description: "Consulte-nos para outros produtos e serviços automóveis",
+      category: "Consulta"
     }
   ],
   construcao: [
