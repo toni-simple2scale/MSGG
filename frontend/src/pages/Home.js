@@ -22,7 +22,7 @@ const getProductIcon = (productId) => {
     7: Palette, // Afinação Simples com Espectrofotômetro
     // Construção Civil
     8: PaintBucket, // Tintas Interiores
-    9: Home, // Tintas Exteriores
+    9: HomeIcon, // Tintas Exteriores
     10: BookOpen, // Catálogos RAL/NCS/Pantone
     11: Layers, // Preparação de Superfícies
     12: Shield, // Isolamentos
