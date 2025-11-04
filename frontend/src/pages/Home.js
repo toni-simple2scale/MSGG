@@ -527,23 +527,7 @@ const Home = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Marcas Representadas</h2>
             <p className="text-xl text-gray-600">Trabalhamos com as melhores marcas do mercado</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {brands.map((brand) => (
-              <Card key={brand.id} className="brand-card text-center">
-                <CardHeader>
-                  <div className="flex items-center justify-center h-24 mb-4">
-                    <img 
-                      src={brand.logo} 
-                      alt={brand.name} 
-                      className="max-h-20 w-auto object-contain"
-                    />
-                  </div>
-                  <CardTitle className="text-lg">{brand.name}</CardTitle>
-                  <CardDescription>{brand.description}</CardDescription>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
+          <BrandsCarousel brands={brands} />
         </div>
       </section>
 
