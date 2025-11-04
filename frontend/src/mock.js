@@ -407,15 +407,21 @@ export const brands = [
   },
   {
     id: 13,
-    name: "Roberlo",
+    name: "Tintal",
     logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/4b4b8j2e_logo_news-1.jpg",
     description: "Produtos de reparação automotiva"
   },
   {
     id: 14,
-    name: "APP",
+    name: "Tintas 2000",
     logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/zi8ik6ev_LogoA%20_Prancheta%201.jpg",
     description: "Soluções profissionais de pintura"
+  },
+  {
+    id: 15,
+    name: "Motip",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/03k7i93a_motip-logo.jpg",
+    description: "Sprays e produtos de pintura premium"
   }
 ];
 
