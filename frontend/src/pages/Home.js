@@ -790,7 +790,8 @@ const Home = () => {
                   <img 
                     src={image} 
                     alt={`Loja MSGG ${index + 1}`} 
-                    className="w-full h-64 object-cover rounded-xl shadow-lg"
+                    className="w-full h-96 object-cover rounded-xl shadow-lg"
+                    style={{ aspectRatio: '9/16' }}
                   />
                 </div>
               ))}
