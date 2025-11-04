@@ -159,13 +159,6 @@ const Home = () => {
                   Solicitar Orçamento
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
-                <Button 
-                  size="lg" 
-                  className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-6 shadow-2xl"
-                  onClick={() => window.open('https://wa.me/351913253290?text=Olá! Gostaria de mais informações.', '_blank')}
-                >
-                  WhatsApp
-                </Button>
               </div>
             </div>
           </div>
