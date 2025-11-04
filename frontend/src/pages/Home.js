@@ -176,10 +176,12 @@ const Home = () => {
           </div>
 
           <Tabs defaultValue="automovel" className="w-full">
-            <TabsList className="grid w-full md:w-auto md:inline-grid grid-cols-3 mb-12 h-auto">
-              <TabsTrigger value="automovel" className="text-base px-8 py-3">Automóvel</TabsTrigger>
-              <TabsTrigger value="construcao" className="text-base px-8 py-3">Construção Civil</TabsTrigger>
-              <TabsTrigger value="acessorios" className="text-base px-8 py-3">Acessórios</TabsTrigger>
+            <TabsList className="grid w-full md:w-auto md:inline-grid grid-cols-2 lg:grid-cols-5 mb-12 h-auto">
+              <TabsTrigger value="automovel" className="text-base px-6 py-3">Automóvel</TabsTrigger>
+              <TabsTrigger value="construcao" className="text-base px-6 py-3">Construção Civil</TabsTrigger>
+              <TabsTrigger value="sprays" className="text-base px-6 py-3">Sprays</TabsTrigger>
+              <TabsTrigger value="acessoriosAuto" className="text-base px-6 py-3">Acessórios Auto</TabsTrigger>
+              <TabsTrigger value="acessoriosConstrucao" className="text-base px-6 py-3">Acessórios CC</TabsTrigger>
             </TabsList>
 
             <TabsContent value="automovel">
