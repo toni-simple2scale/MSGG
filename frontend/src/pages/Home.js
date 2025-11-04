@@ -10,6 +10,56 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { products, testimonials, faqs, brands, aboutInfo, storeImages, contactInfo } from '../mock';
 
+const getProductIcon = (productId) => {
+  const iconMap = {
+    // Automóvel
+    1: Car, // Tinta Auto
+    2: Car, // Tinta Motociclos
+    3: Droplets, // Vernizes Auto 2K
+    4: Sparkles, // Massas de Polir/Polish/Ceras
+    5: Layers, // Betumes e Primários
+    6: Palette, // Afinação de Cor Personalizada
+    7: Palette, // Afinação Simples com Espectrofotômetro
+    // Construção Civil
+    8: PaintBucket, // Tintas Interiores
+    9: Home, // Tintas Exteriores
+    10: BookOpen, // Catálogos RAL/NCS/Pantone
+    11: Layers, // Preparação de Superfícies
+    12: Shield, // Isolamentos
+    // Sprays
+    13: SprayCan, // Sprays Auto
+    14: SprayCan, // Sprays Moto
+    15: SprayCan, // Sprays com Afinação
+    16: SprayCan, // Sprays de Primário
+    17: SprayCan, // Sprays Metalomecânica
+    18: SprayCan, // Spray de Verniz
+    // Acessórios Auto
+    19: Package, // Cábine de Pintura
+    20: Zap, // Pistolas
+    21: Sparkles, // Material Técnico de Polimento
+    22: Package, // Compressores
+    23: Package, // Filtros
+    24: Shield, // Fatos de Pintura
+    25: Scissors, // Fitas
+    26: Shield, // Máscaras
+    27: Shield, // Luvas
+    28: Package, // Lixas e Discos
+    29: Package, // Mais Opções
+    // Acessórios Construção
+    30: PaintBrush, // Rolos
+    31: PaintBrush, // Trinchas
+    32: PaintBrush, // Extensivos
+    33: Scissors, // Fita de Pintor
+    34: Shield, // Proteções
+    35: Shield, // Proteções de Mobiliário
+    36: Shield, // Fatos de Pintura
+    37: Shield, // Luvas
+    38: Package, // Lixas
+    39: Package, // Mais Opções
+  };
+  return iconMap[productId] || Package;
+};
+
 const TestimonialsCarousel = ({ testimonials }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' }, [Autoplay({ delay: 5000, stopOnInteraction: false })]);
   const [selectedIndex, setSelectedIndex] = useState(0);
