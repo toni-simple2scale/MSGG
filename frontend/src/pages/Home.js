@@ -278,20 +278,23 @@ const Home = () => {
 
             <TabsContent value="sprays">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {products.sprays.map((product) => (
-                  <Card key={product.id} className="product-card">
-                    <CardHeader>
-                      <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-200 rounded-lg flex items-center justify-center mb-3">
-                        <Package className="text-accent-purple" size={24} />
-                      </div>
-                      <CardTitle className="text-lg">{product.name}</CardTitle>
-                      <CardDescription>{product.category}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-600 text-sm">{product.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
+                {products.sprays.map((product) => {
+                  const IconComponent = getProductIcon(product.id);
+                  return (
+                    <Card key={product.id} className="product-card">
+                      <CardHeader>
+                        <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-200 rounded-lg flex items-center justify-center mb-3">
+                          <IconComponent className="text-accent-purple" size={24} />
+                        </div>
+                        <CardTitle className="text-lg">{product.name}</CardTitle>
+                        <CardDescription>{product.category}</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-gray-600 text-sm">{product.description}</p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
             </TabsContent>
 
