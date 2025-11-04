@@ -19,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/politica-cookies" element={<PoliticaCookies />} />
+          <Route path="/informacoes-legais" element={<InformacoesLegais />} />
         </Routes>
         <Footer />
         <CookieConsent />
