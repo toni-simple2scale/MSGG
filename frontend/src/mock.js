@@ -302,31 +302,36 @@ export const testimonials = [
 export const faqs = [
   {
     id: 1,
+    question: "Fazem tintas personalizadas?",
+    answer: "Sim! Dispomos de tecnologia de ponta, incluindo Espectrofotómetro, que nos permite criar a cor exata que necessita. Seja para repintura automóvel ou construção civil, garantimos correspondência perfeita de cores com precisão profissional."
+  },
+  {
+    id: 2,
     question: "Fazem entregas ao domicílio?",
     answer: "Sim, realizamos entregas rápidas em toda a região de Lisboa e arredores. Para encomendas de maior volume, contacte-nos para saber os prazos de entrega."
   },
   {
-    id: 2,
+    id: 3,
     question: "Têm assessoria técnica?",
     answer: "Sim, a nossa equipa especializada está disponível para aconselhamento técnico sobre escolha de produtos, aplicação e melhores práticas. Contacte-nos por telefone ou visite a nossa loja."
   },
   {
-    id: 3,
+    id: 4,
     question: "Como solicitar um orçamento?",
     answer: "Pode solicitar orçamento através do formulário no nosso website, por telefone (+351 219 673 174) ou por email (geral@mariosgomes.com). Responderemos com a maior brevidade possível."
   },
   {
-    id: 4,
+    id: 5,
     question: "Têm produtos em stock?",
     answer: "Mantemos um vasto stock de todas as marcas que representamos. Para produtos específicos ou grandes quantidades, recomendamos contacto prévio para confirmar disponibilidade."
   },
   {
-    id: 5,
+    id: 6,
     question: "Vendem a particulares ou só a profissionais?",
     answer: "Vendemos tanto a profissionais como a particulares. Todos os clientes beneficiam da nossa experiência e aconselhamento especializado."
   },
   {
-    id: 6,
+    id: 7,
     question: "Qual é o horário de funcionamento?",
     answer: "Estamos abertos de segunda a sexta-feira das 9:00h às 13:00h e das 14:00h às 18:00h. Aos sábados das 9:00h às 13:00h. Encerramos aos domingos e feriados."
   }
