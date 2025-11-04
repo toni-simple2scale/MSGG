@@ -386,6 +386,36 @@ export const brands = [
     name: "Werku",
     logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/dofupigw_werku_logo.png",
     description: "Ferramentas e equipamentos profissionais"
+  },
+  {
+    id: 10,
+    name: "3M",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/2sfy4w8l_3M_wordmark.svg.png",
+    description: "Líder global em soluções inovadoras"
+  },
+  {
+    id: 11,
+    name: "Anest Iwata",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/r7dz3von_anest-iwata-logo-sm_orig.png",
+    description: "Pistolas de pintura de alta precisão"
+  },
+  {
+    id: 12,
+    name: "INDASA",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/w3nhqur5_INDASA.svg",
+    description: "Abrasivos profissionais de qualidade"
+  },
+  {
+    id: 13,
+    name: "Roberlo",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/4b4b8j2e_logo_news-1.jpg",
+    description: "Produtos de reparação automotiva"
+  },
+  {
+    id: 14,
+    name: "APP",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/zi8ik6ev_LogoA%20_Prancheta%201.jpg",
+    description: "Soluções profissionais de pintura"
   }
 ];
 
