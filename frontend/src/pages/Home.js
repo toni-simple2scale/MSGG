@@ -304,7 +304,7 @@ const Home = () => {
                 variants={fadeInUp}
                 className="text-xl lg:text-2xl text-gray-100 mb-6 leading-relaxed drop-shadow-lg"
               >
-                Referência em tintas e vernizes para repintura automóvel e construção civil. 35 anos de experiência, qualidade e assessoria técnica especializada.
+                Referência em tintas e vernizes para repintura automóvel e construção civil. <span className="whitespace-nowrap">35 anos</span> de experiência, qualidade e assessoria técnica especializada.
               </motion.p>
               
               {/* Contact Info */}
