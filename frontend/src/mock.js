@@ -125,6 +125,12 @@ export const products = {
       name: "Spray de Verniz",
       description: "Acabamento protetor e brilhante",
       category: "Vernizes"
+    },
+    {
+      id: 42,
+      name: "Mais Opções",
+      description: "Consulte-nos para outros tipos de sprays",
+      category: "Consulta"
     }
   ],
   acessoriosAuto: [
