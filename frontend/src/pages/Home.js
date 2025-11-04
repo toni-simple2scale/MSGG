@@ -525,7 +525,7 @@ const Home = () => {
               <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full">
                 <CardHeader>
                   <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 hover:rotate-12">
-                    <Package className="text-accent-blue" size={28} />
+                    <PaintBucket className="text-accent-blue" size={28} />
                   </div>
                   <CardTitle className="text-xl">Vasta Variedade</CardTitle>
                 </CardHeader>
@@ -553,7 +553,7 @@ const Home = () => {
               <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full">
                 <CardHeader>
                   <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 hover:rotate-12">
-                    <Headphones className="text-accent-purple" size={28} />
+                    <Users className="text-accent-purple" size={28} />
                   </div>
                   <CardTitle className="text-xl">Assessoria Técnica</CardTitle>
                 </CardHeader>
