@@ -269,7 +269,7 @@ const Home = () => {
                 <CardTitle className="text-xl">Vasta Variedade</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Produtos de construção civil e repintura automóvel das melhores marcas do mercado.</p>
+                <p className="text-gray-600">Produtos de repintura automóvel e construção civil das melhores marcas do mercado.</p>
               </CardContent>
             </Card>
 
