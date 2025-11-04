@@ -81,6 +81,12 @@ export const products = {
       name: "Isolamentos de Telhado/Terraços/Placas",
       description: "Impermeabilização e proteção de coberturas",
       category: "Isolamentos"
+    },
+    {
+      id: 41,
+      name: "Mais Opções",
+      description: "Consulte-nos para outros produtos de construção civil",
+      category: "Consulta"
     }
   ],
   sprays: [
