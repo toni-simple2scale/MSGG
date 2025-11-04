@@ -429,69 +429,75 @@ const Home = () => {
             </TabsContent>
 
             <TabsContent value="sprays">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {products.sprays.map((product) => {
                   const IconComponent = getProductIcon(product.id);
                   return (
-                    <Card key={product.id} className="product-card">
-                      <CardHeader>
-                        <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-3">
-                          <IconComponent className="text-accent-purple" size={24} />
-                        </div>
-                        <CardTitle className="text-lg">{product.name}</CardTitle>
-                        <CardDescription>{product.category}</CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-gray-600 text-sm">{product.description}</p>
-                      </CardContent>
-                    </Card>
+                    <motion.div key={product.id} variants={scaleIn}>
+                      <Card className="product-card h-full hover:shadow-xl transition-shadow duration-300">
+                        <CardHeader>
+                          <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-3 transition-transform duration-300 hover:scale-110">
+                            <IconComponent className="text-accent-purple" size={24} />
+                          </div>
+                          <CardTitle className="text-lg">{product.name}</CardTitle>
+                          <CardDescription>{product.category}</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-gray-600 text-sm">{product.description}</p>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
                   );
                 })}
-              </div>
+              </motion.div>
             </TabsContent>
 
             <TabsContent value="acessoriosAuto">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {products.acessoriosAuto.map((product) => {
                   const IconComponent = getProductIcon(product.id);
                   return (
-                    <Card key={product.id} className="product-card">
-                      <CardHeader>
-                        <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-3">
-                          <IconComponent className="text-accent-yellow" size={24} />
-                        </div>
-                        <CardTitle className="text-lg">{product.name}</CardTitle>
-                        <CardDescription>{product.category}</CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-gray-600 text-sm">{product.description}</p>
-                      </CardContent>
-                    </Card>
+                    <motion.div key={product.id} variants={scaleIn}>
+                      <Card className="product-card h-full hover:shadow-xl transition-shadow duration-300">
+                        <CardHeader>
+                          <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-3 transition-transform duration-300 hover:scale-110">
+                            <IconComponent className="text-accent-yellow" size={24} />
+                          </div>
+                          <CardTitle className="text-lg">{product.name}</CardTitle>
+                          <CardDescription>{product.category}</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-gray-600 text-sm">{product.description}</p>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
                   );
                 })}
-              </div>
+              </motion.div>
             </TabsContent>
 
             <TabsContent value="acessoriosConstrucao">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {products.acessoriosConstrucao.map((product) => {
                   const IconComponent = getProductIcon(product.id);
                   return (
-                    <Card key={product.id} className="product-card">
-                      <CardHeader>
-                        <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3">
-                          <IconComponent className="text-green-600" size={24} />
-                        </div>
-                        <CardTitle className="text-lg">{product.name}</CardTitle>
-                        <CardDescription>{product.category}</CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-gray-600 text-sm">{product.description}</p>
-                      </CardContent>
-                    </Card>
+                    <motion.div key={product.id} variants={scaleIn}>
+                      <Card className="product-card h-full hover:shadow-xl transition-shadow duration-300">
+                        <CardHeader>
+                          <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 transition-transform duration-300 hover:scale-110">
+                            <IconComponent className="text-green-600" size={24} />
+                          </div>
+                          <CardTitle className="text-lg">{product.name}</CardTitle>
+                          <CardDescription>{product.category}</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-gray-600 text-sm">{product.description}</p>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
                   );
                 })}
-              </div>
+              </motion.div>
             </TabsContent>
           </Tabs>
 
