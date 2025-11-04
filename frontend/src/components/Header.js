@@ -24,8 +24,8 @@ const Header = () => {
 
   const menuItems = [
     { label: 'Produtos', id: 'produtos' },
-    { label: 'Loja', id: 'loja' },
     { label: 'Marcas', id: 'marcas' },
+    { label: 'Loja', id: 'loja' },
     { label: 'Testemunhos', id: 'testemunhos' },
     { label: 'FAQ', id: 'faq' },
     { label: 'Sobre Nós', id: 'sobre' },
