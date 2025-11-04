@@ -286,15 +286,25 @@ const Home = () => {
         {/* Content */}
         <div className="max-w-7xl mx-auto relative z-10 w-full">
           <div className="max-w-3xl">
-            <div className="fade-in">
-              <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={staggerContainer}
+            >
+              <motion.h1 
+                variants={fadeInUp}
+                className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl"
+              >
                 Especialistas em
                 <span className="text-orange-400"> Pintura Automóvel</span>
                 <span className="text-white"> e Construção Civil</span>
-              </h1>
-              <p className="text-xl lg:text-2xl text-gray-100 mb-6 leading-relaxed drop-shadow-lg">
+              </motion.h1>
+              <motion.p 
+                variants={fadeInUp}
+                className="text-xl lg:text-2xl text-gray-100 mb-6 leading-relaxed drop-shadow-lg"
+              >
                 Referência em tintas e vernizes para repintura automóvel e construção civil. 35 anos de experiência, qualidade e assessoria técnica especializada.
-              </p>
+              </motion.p>
               
               {/* Contact Info */}
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-8">
