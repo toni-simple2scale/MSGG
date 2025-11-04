@@ -10,6 +10,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'framer-motion';
 import AnimatedCounter from '../components/AnimatedCounter';
+import { ProductCardSkeleton, BrandCardSkeleton, TestimonialCardSkeleton, SkeletonShimmer } from '../components/SkeletonCard';
 import { products, testimonials, faqs, brands, aboutInfo, storeImages, contactInfo } from '../mock';
 
 // Animation variants
