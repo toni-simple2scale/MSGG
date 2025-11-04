@@ -24,6 +24,7 @@ function App() {
         </Routes>
         <Footer />
         <CookieConsent />
+        <ScrollToTop />
         <Toaster position="top-right" richColors />
       </BrowserRouter>
     </div>
