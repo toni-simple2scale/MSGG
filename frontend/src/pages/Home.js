@@ -297,7 +297,8 @@ const Home = () => {
               >
                 Especialistas em
                 <span className="text-orange-400"> Pintura Automóvel</span>
-                <span className="text-blue-400"> e Construção Civil</span>
+                <span className="text-white"> e </span>
+                <span className="text-blue-400">Construção Civil</span>
               </motion.h1>
               <motion.p 
                 variants={fadeInUp}
