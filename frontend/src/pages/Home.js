@@ -46,9 +46,9 @@ const getProductIcon = (productId) => {
     28: Package, // Lixas e Discos
     29: Package, // Mais Opções
     // Acessórios Construção
-    30: PaintBrush, // Rolos
-    31: PaintBrush, // Trinchas
-    32: PaintBrush, // Extensivos
+    30: Paintbrush, // Rolos
+    31: Paintbrush, // Trinchas
+    32: Paintbrush, // Extensivos
     33: Scissors, // Fita de Pintor
     34: Shield, // Proteções
     35: Shield, // Proteções de Mobiliário
