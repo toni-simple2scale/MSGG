@@ -71,6 +71,24 @@ const CookieConsent = () => {
     }));
   };
 
+  // Block body scroll when modal is open
+  useEffect(() => {
+    if (showBanner) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    };
+  }, [showBanner]);
+
   if (!showBanner) return null;
 
   return (
@@ -79,8 +97,8 @@ const CookieConsent = () => {
       <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-[9998]" />
 
       {/* Cookie Consent Modal */}
-      <div className="fixed inset-0 z-[9999] flex items-end justify-center p-4 pb-8">
-        <Card className="max-w-4xl w-full shadow-2xl border-none">
+      <div className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4">
+        <Card className="max-w-4xl w-full shadow-2xl border-none max-h-[90vh] sm:max-h-[85vh] flex flex-col overflow-hidden rounded-t-3xl sm:rounded-2xl">
           <CardHeader className="relative pb-4">
             <div className="flex items-start gap-4">
               <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center flex-shrink-0">
