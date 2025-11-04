@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "./components/ui/sonner";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
 import CookieConsent from "./components/CookieConsent";
 import Home from "./pages/Home";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
@@ -21,7 +20,6 @@ function App() {
           <Route path="/politica-cookies" element={<PoliticaCookies />} />
         </Routes>
         <Footer />
-        <WhatsAppButton />
         <CookieConsent />
         <Toaster position="top-right" richColors />
       </BrowserRouter>
