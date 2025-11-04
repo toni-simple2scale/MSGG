@@ -383,13 +383,20 @@ const Home = () => {
             </TabsList>
 
             <TabsContent value="automovel">
-              <motion.div 
-                initial="hidden"
-                animate="visible"
-                variants={staggerContainer}
-                className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
-              >
-                {products.automovel.map((product, index) => {
+              {isLoading ? (
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {[...Array(8)].map((_, i) => (
+                    <ProductCardSkeleton key={i} />
+                  ))}
+                </div>
+              ) : (
+                <motion.div 
+                  initial="hidden"
+                  animate="visible"
+                  variants={staggerContainer}
+                  className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+                >
+                  {products.automovel.map((product, index) => {
                   const IconComponent = getProductIcon(product.id);
                   
                   // Special styling for "Mais Opções"
