@@ -256,20 +256,23 @@ const Home = () => {
 
             <TabsContent value="construcao">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {products.construcao.map((product) => (
-                  <Card key={product.id} className="product-card">
-                    <CardHeader>
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center mb-3">
-                        <Package className="text-accent-blue" size={24} />
-                      </div>
-                      <CardTitle className="text-lg">{product.name}</CardTitle>
-                      <CardDescription>{product.category}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-600 text-sm">{product.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
+                {products.construcao.map((product) => {
+                  const IconComponent = getProductIcon(product.id);
+                  return (
+                    <Card key={product.id} className="product-card">
+                      <CardHeader>
+                        <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center mb-3">
+                          <IconComponent className="text-accent-blue" size={24} />
+                        </div>
+                        <CardTitle className="text-lg">{product.name}</CardTitle>
+                        <CardDescription>{product.category}</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-gray-600 text-sm">{product.description}</p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
             </TabsContent>
 
