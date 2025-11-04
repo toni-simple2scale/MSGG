@@ -8,6 +8,7 @@ import CookieConsent from "./components/CookieConsent";
 import Home from "./pages/Home";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import PoliticaCookies from "./pages/PoliticaCookies";
+import InformacoesLegais from "./pages/InformacoesLegais";
 
 function App() {
   return (
