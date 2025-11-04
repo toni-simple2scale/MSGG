@@ -99,7 +99,7 @@ const CookieConsent = () => {
       {/* Cookie Consent Modal */}
       <div className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4">
         <Card className="max-w-4xl w-full shadow-2xl border-none max-h-[90vh] sm:max-h-[85vh] flex flex-col overflow-hidden rounded-t-3xl sm:rounded-2xl">
-          <CardHeader className="relative pb-4">
+          <CardHeader className="relative pb-4 flex-shrink-0">
             <div className="flex items-start gap-4">
               <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center flex-shrink-0">
                 <Shield className="text-orange-600" size={28} />
@@ -123,7 +123,7 @@ const CookieConsent = () => {
             </div>
           </CardHeader>
 
-          <CardContent className="space-y-6">
+          <CardContent className="space-y-6 overflow-y-auto flex-1" style={{ WebkitOverflowScrolling: 'touch' }}>
             {!showCustomize ? (
               <>
                 {/* Cookie Categories Preview */}
