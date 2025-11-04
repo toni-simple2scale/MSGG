@@ -673,14 +673,26 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="py-20 bg-white">
+      <section id="sobre" className="py-20 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+            className="text-center mb-12"
+          >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Sobre Nós</h2>
-          </div>
+          </motion.div>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left side - Content */}
-            <div className="space-y-8">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={staggerContainer}
+              className="space-y-8"
+            >
               <Card className="border-none shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl">A Nossa História</CardTitle>
