@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { Phone, Mail, MapPin, ArrowRight, Star, Package, Truck, Headphones, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowRight, Star, Package, Truck, Headphones, CheckCircle2, ChevronLeft, ChevronRight, Car, SprayCan, Droplets, Sparkles, Layers, Palette, PaintBucket, Home, BookOpen, Shield, Zap, PaintBrush, Scissors } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
