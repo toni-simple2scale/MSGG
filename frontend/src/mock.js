@@ -379,7 +379,6 @@ export const storeImages = [
 
 export const contactInfo = {
   phone: "+351 219 673 174",
-  whatsapp: "+351913253290",
   email: "geral@mariosgomes.com",
   address: "Av. Combatentes do Ultramar, Arm. A - Lameiras, 2715-776 Terrugem",
   schedule: "Segunda a Sexta: 8h30 - 18h00 | Sábado: 9h00 - 13h00",
