@@ -356,6 +356,36 @@ export const brands = [
     name: "SPRINT",
     logo: "https://customer-assets.emergentagent.com/job_msgg-paints/artifacts/vectqpi2_ChatGPT%20Image%20Nov%203%2C%202025%2C%2008_17_24%20PM.png",
     description: "Inovação em produtos automotivos"
+  },
+  {
+    id: 5,
+    name: "Q1",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/9juglk9r_Q1.jpg",
+    description: "Soluções premium de masking"
+  },
+  {
+    id: 6,
+    name: "SAGOLA",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/7uategf7_SAGOLA.png",
+    description: "Equipamento profissional de pintura"
+  },
+  {
+    id: 7,
+    name: "Soudal",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/vc5e7n1c_soudal-hr.jpg",
+    description: "Especialista em selantes e adesivos"
+  },
+  {
+    id: 8,
+    name: "Cartec",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/uylfralq_Square_Logo_e805b9ab-aa74-41e0-afd6-ff5cb1a3b9ba_592x.webp",
+    description: "Produtos de cuidado automotivo"
+  },
+  {
+    id: 9,
+    name: "Werku",
+    logo: "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/dofupigw_werku_logo.png",
+    description: "Ferramentas e equipamentos profissionais"
   }
 ];
 
