@@ -222,13 +222,51 @@ const Home = () => {
               </div>
             </TabsContent>
 
-            <TabsContent value="acessorios">
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {products.acessorios.map((product) => (
+            <TabsContent value="sprays">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {products.sprays.map((product) => (
+                  <Card key={product.id} className="product-card">
+                    <CardHeader>
+                      <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-200 rounded-lg flex items-center justify-center mb-3">
+                        <Package className="text-accent-purple" size={24} />
+                      </div>
+                      <CardTitle className="text-lg">{product.name}</CardTitle>
+                      <CardDescription>{product.category}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 text-sm">{product.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="acessoriosAuto">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {products.acessoriosAuto.map((product) => (
                   <Card key={product.id} className="product-card">
                     <CardHeader>
                       <div className="w-12 h-12 bg-gradient-to-br from-yellow-100 to-amber-200 rounded-lg flex items-center justify-center mb-3">
                         <Package className="text-accent-yellow" size={24} />
+                      </div>
+                      <CardTitle className="text-lg">{product.name}</CardTitle>
+                      <CardDescription>{product.category}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 text-sm">{product.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="acessoriosConstrucao">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {products.acessoriosConstrucao.map((product) => (
+                  <Card key={product.id} className="product-card">
+                    <CardHeader>
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-emerald-200 rounded-lg flex items-center justify-center mb-3">
+                        <Package className="text-green-600" size={24} />
                       </div>
                       <CardTitle className="text-lg">{product.name}</CardTitle>
                       <CardDescription>{product.category}</CardDescription>
@@ -245,7 +283,7 @@ const Home = () => {
           <div className="mt-12 text-center bg-gradient-to-r from-blue-50 to-orange-50 py-8 px-6 rounded-2xl">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Entregas Rápidas em Toda a Região</h3>
             <p className="text-gray-600 mb-4">Receba os seus produtos de forma rápida e segura</p>
-            <Button className="btn-gradient-orange text-white" onClick={() => window.open('https://wa.me/351913253290?text=Olá! Gostaria de saber sobre entregas.', '_blank')}>
+            <Button className="btn-gradient-orange text-white" onClick={() => document.getElementById('contactos').scrollIntoView({ behavior: 'smooth' })}>
               Saber Mais
             </Button>
           </div>
