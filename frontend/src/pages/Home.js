@@ -95,10 +95,8 @@ const Home = () => {
 
   const onSubmit = async (data) => {
     setFormSubmitting(true);
-    // For demo purposes, open WhatsApp with pre-filled message
-    const message = `Olá! Sou ${data.name}. ${data.message}`;
-    window.open(`https://wa.me/351913253290?text=${encodeURIComponent(message)}`, '_blank');
-    toast.success('A redirecionar para WhatsApp...');
+    // Show success message
+    toast.success('Mensagem enviada com sucesso! Entraremos em contacto em breve.');
     reset();
     setFormSubmitting(false);
   };
