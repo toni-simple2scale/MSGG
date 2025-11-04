@@ -1,82 +1,248 @@
 // Mock data for MSGG website
 
 export const products = {
-  construcao: [
+  automovel: [
     {
       id: 1,
-      name: "Tinta Interior Premium",
-      description: "Tinta acrílica de alta qualidade para interiores",
-      category: "Tintas Interiores"
+      name: "Tinta Auto",
+      description: "Lisos, Metalizados, Pérolas e mais opções",
+      category: "Tintas Automóveis"
     },
     {
       id: 2,
-      name: "Tinta Exterior Resistente",
-      description: "Proteção duradoura contra intempéries",
-      category: "Tintas Exteriores"
+      name: "Tinta Motociclos",
+      description: "Lisos, Metalizados, Pérolas e acabamentos especiais",
+      category: "Tintas Moto"
     },
     {
       id: 3,
-      name: "Verniz Aquoso",
-      description: "Verniz ecológico à base de água",
+      name: "Vernizes Auto 2K",
+      description: "Acabamento brilhante de alta resistência e durabilidade",
       category: "Vernizes"
     },
     {
       id: 4,
-      name: "Primário Universal",
-      description: "Preparação ideal para todas as superfícies",
-      category: "Primários"
-    }
-  ],
-  automovel: [
+      name: "Massas de Polir/Polish/Ceras",
+      description: "Produtos para polimento e proteção de superfícies",
+      category: "Polimento"
+    },
     {
       id: 5,
-      name: "Tinta Base Água",
-      description: "Sistema de pintura automotiva de última geração",
-      category: "Tintas Automotivas"
+      name: "Betumes e Primários",
+      description: "Preparação e nivelamento de superfícies",
+      category: "Preparação"
     },
     {
       id: 6,
-      name: "Spray Retoque",
-      description: "Solução rápida para pequenos reparos",
-      category: "Sprays"
+      name: "Afinação de Cor Personalizada",
+      description: "Cor exata do seu veículo com tecnologia avançada",
+      category: "Afinação"
     },
     {
       id: 7,
-      name: "Verniz 2K",
-      description: "Acabamento brilhante de alta resistência",
-      category: "Vernizes Automotivos"
-    },
-    {
-      id: 8,
-      name: "Primer Aparelho",
-      description: "Preparação profissional para repintura",
-      category: "Primers"
+      name: "Afinação Simples com Espectrofotômetro",
+      description: "Leitura precisa para correspondência perfeita de cor",
+      category: "Afinação"
     }
   ],
-  acessorios: [
+  construcao: [
+    {
+      id: 8,
+      name: "Tintas Interiores",
+      description: "Acabamento perfeito para paredes e tetos interiores",
+      category: "Interiores"
+    },
     {
       id: 9,
-      name: "Kit Lixas Profissional",
-      description: "Conjunto completo de lixas de vários grãos",
-      category: "Lixas"
+      name: "Tintas Exteriores",
+      description: "Proteção duradoura contra intempéries",
+      category: "Exteriores"
     },
     {
       id: 10,
-      name: "Rolos Microfibra",
-      description: "Rolos de alta qualidade para acabamento perfeito",
-      category: "Rolos"
+      name: "Catálogos RAL/NCS/Pantone",
+      description: "Ampla gama de cores e acabamentos disponíveis",
+      category: "Cores"
     },
     {
       id: 11,
-      name: "Trinchas Premium",
-      description: "Pincéis profissionais de várias medidas",
-      category: "Trinchas"
+      name: "Preparação de Superfícies (Primários)",
+      description: "Base ideal para aderência e acabamento duradouro",
+      category: "Preparação"
     },
     {
       id: 12,
-      name: "Fitas de Máscara",
-      description: "Proteção precisa para trabalhos de pintura",
-      category: "Fitas"
+      name: "Isolamentos de Telhado/Terraços/Placas",
+      description: "Impermeabilização e proteção de coberturas",
+      category: "Isolamentos"
+    }
+  ],
+  sprays: [
+    {
+      id: 13,
+      name: "Sprays Auto",
+      description: "Soluções rápidas para retoques automóveis",
+      category: "Automóvel"
+    },
+    {
+      id: 14,
+      name: "Sprays Moto",
+      description: "Produtos especializados para motociclos",
+      category: "Motociclos"
+    },
+    {
+      id: 15,
+      name: "Sprays com Afinação de Cor",
+      description: "Cor personalizada (Mínimo 2 Unidades)",
+      category: "Afinação"
+    },
+    {
+      id: 16,
+      name: "Sprays de Primário (Multisuperfícies)",
+      description: "Preparação universal para diversos materiais",
+      category: "Primários"
+    },
+    {
+      id: 17,
+      name: "Sprays Metalomecânica",
+      description: "Produtos industriais para superfícies metálicas",
+      category: "Industrial"
+    },
+    {
+      id: 18,
+      name: "Spray de Verniz",
+      description: "Acabamento protetor e brilhante",
+      category: "Vernizes"
+    }
+  ],
+  acessoriosAuto: [
+    {
+      id: 19,
+      name: "Cábine de Pintura",
+      description: "Equipamento profissional para trabalhos de qualidade",
+      category: "Equipamento"
+    },
+    {
+      id: 20,
+      name: "Pistolas",
+      description: "Pistolas de pintura profissionais de várias marcas",
+      category: "Equipamento"
+    },
+    {
+      id: 21,
+      name: "Material Técnico de Polimento",
+      description: "Máquinas, Boinas, Pratos e acessórios",
+      category: "Polimento"
+    },
+    {
+      id: 22,
+      name: "Compressores",
+      description: "Compressores de ar para uso profissional",
+      category: "Equipamento"
+    },
+    {
+      id: 23,
+      name: "Filtros",
+      description: "Filtros para cábines e sistemas de pintura",
+      category: "Consumíveis"
+    },
+    {
+      id: 24,
+      name: "Fatos de Pintura",
+      description: "Proteção individual para trabalhos de pintura",
+      category: "Proteção"
+    },
+    {
+      id: 25,
+      name: "Fitas",
+      description: "Fitas de máscara de alta precisão",
+      category: "Consumíveis"
+    },
+    {
+      id: 26,
+      name: "Máscaras",
+      description: "Proteção respiratória profissional",
+      category: "Proteção"
+    },
+    {
+      id: 27,
+      name: "Luvas",
+      description: "Luvas de proteção para pintura",
+      category: "Proteção"
+    },
+    {
+      id: 28,
+      name: "Lixas e Discos",
+      description: "Abrasivos de várias granulometrias",
+      category: "Consumíveis"
+    },
+    {
+      id: 29,
+      name: "Mais Opções",
+      description: "Consulte-nos para outros produtos e acessórios",
+      category: "Consulta"
+    }
+  ],
+  acessoriosConstrucao: [
+    {
+      id: 30,
+      name: "Rolos",
+      description: "Rolos de pintura para diversos acabamentos",
+      category: "Aplicação"
+    },
+    {
+      id: 31,
+      name: "Trinchas",
+      description: "Pincéis profissionais de várias medidas",
+      category: "Aplicação"
+    },
+    {
+      id: 32,
+      name: "Extensivos",
+      description: "Extensões para rolos e ferramentas",
+      category: "Aplicação"
+    },
+    {
+      id: 33,
+      name: "Fita de Pintor",
+      description: "Fitas de máscara para acabamentos perfeitos",
+      category: "Consumíveis"
+    },
+    {
+      id: 34,
+      name: "Proteções",
+      description: "Plásticos e lonas de proteção",
+      category: "Proteção"
+    },
+    {
+      id: 35,
+      name: "Proteções de Mobiliário e Chão",
+      description: "Coberturas especializadas para interiores",
+      category: "Proteção"
+    },
+    {
+      id: 36,
+      name: "Fatos de Pintura",
+      description: "Vestuário de proteção individual",
+      category: "Proteção"
+    },
+    {
+      id: 37,
+      name: "Luvas",
+      description: "Luvas de proteção para trabalhos de pintura",
+      category: "Proteção"
+    },
+    {
+      id: 38,
+      name: "Lixas",
+      description: "Lixas manuais de diversas granulometrias",
+      category: "Consumíveis"
+    },
+    {
+      id: 39,
+      name: "Mais Opções",
+      description: "Consulte-nos para outros produtos e acessórios",
+      category: "Consulta"
     }
   ]
 };
