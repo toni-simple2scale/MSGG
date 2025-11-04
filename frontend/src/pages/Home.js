@@ -327,7 +327,7 @@ const Home = () => {
                   return (
                     <Card key={product.id} className="product-card">
                       <CardHeader>
-                        <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-emerald-200 rounded-lg flex items-center justify-center mb-3">
+                        <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3">
                           <IconComponent className="text-green-600" size={24} />
                         </div>
                         <CardTitle className="text-lg">{product.name}</CardTitle>
