@@ -65,8 +65,8 @@ const InformacoesLegais = () => {
             </div>
             
             <div className="space-y-3 text-gray-700">
-              <p>Estrada da Portela de Carnaxide, 117</p>
-              <p>2635-543 Rio de Mouro</p>
+              <p>Av. Combatentes do Ultramar, Arm. A - Lameiras</p>
+              <p>2715-776 Terrugem</p>
               <p>Sintra, Portugal</p>
             </div>
           </section>
