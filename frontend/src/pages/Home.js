@@ -125,12 +125,11 @@ const Home = () => {
           <div className="max-w-3xl">
             <div className="fade-in">
               <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Soluções Completas em
-                <span className="text-blue-400"> Tintas</span> e
-                <span className="text-orange-400"> Vernizes</span>
+                Especialistas em
+                <span className="text-orange-400"> Pintura Automóvel</span>
               </h1>
               <p className="text-xl lg:text-2xl text-gray-100 mb-6 leading-relaxed drop-shadow-lg">
-                Especialistas em construção civil e repintura automóvel. Qualidade, variedade e assessoria técnica especializada.
+                Referência em tintas e vernizes para repintura automóvel e construção civil. 35 anos de experiência, qualidade e assessoria técnica especializada.
               </p>
               
               {/* Contact Info */}
