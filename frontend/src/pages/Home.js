@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import { motion } from 'framer-motion';
 import { products, testimonials, faqs, brands, aboutInfo, storeImages, contactInfo } from '../mock';
 
 const getProductIcon = (productId) => {
