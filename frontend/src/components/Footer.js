@@ -109,18 +109,22 @@ const Footer = () => {
               © {new Date().getFullYear()} Mário Simões Gomes & Gomes, Lda. Todos os direitos reservados.
             </p>
             <div className="flex gap-6">
-              <Link 
-                to="/politica-privacidade" 
+              <a 
+                href="/politica-privacidade" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors text-sm underline"
               >
                 Política de Privacidade
-              </Link>
-              <Link 
-                to="/politica-cookies" 
+              </a>
+              <a 
+                href="/politica-cookies" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors text-sm underline"
               >
                 Política de Cookies
-              </Link>
+              </a>
             </div>
           </div>
         </div>
