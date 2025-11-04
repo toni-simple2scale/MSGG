@@ -567,13 +567,26 @@ const Home = () => {
       </section>
 
       {/* Brands Section */}
-      <section id="marcas" className="py-20 bg-gray-50">
+      <section id="marcas" className="py-20 bg-gray-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+            className="text-center mb-16"
+          >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Marcas Representadas</h2>
             <p className="text-xl text-gray-600">Trabalhamos com as melhores marcas do mercado</p>
-          </div>
-          <BrandsCarousel brands={brands} />
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeIn}
+          >
+            <BrandsCarousel brands={brands} />
+          </motion.div>
         </div>
       </section>
 
