@@ -263,6 +263,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [heroImageLoaded, setHeroImageLoaded] = useState(false);
 
   // Simulate loading delay for skeleton demonstration
   useEffect(() => {
