@@ -272,6 +272,20 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // Gallery handlers
+  const openGallery = (index) => {
+    setSelectedImageIndex(index);
+    setGalleryOpen(true);
+  };
+
+  const nextImage = () => {
+    setSelectedImageIndex((prev) => (prev + 1) % storeImages.length);
+  };
+
+  const prevImage = () => {
+    setSelectedImageIndex((prev) => (prev - 1 + storeImages.length) % storeImages.length);
+  };
+
   const onSubmit = async (data) => {
     setFormSubmitting(true);
     // Show success message
