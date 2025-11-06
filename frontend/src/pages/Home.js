@@ -298,7 +298,7 @@ const Home = () => {
     <div className="min-h-screen">
       <SkeletonShimmer />
       {/* Hero Section */}
-      <section className="relative pt-32 pb-32 px-4 min-h-[85vh] flex items-end md:items-center">
+      <section className="relative pt-48 md:pt-32 pb-32 px-4 min-h-[85vh] flex items-end md:items-center">
         {/* Background Image */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-no-repeat bg-[center_top] md:bg-[center_top]"
