@@ -462,8 +462,8 @@ export const aboutInfo = {
 };
 
 export const storeImages = [
-  "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/4dbjb4o5_Instalac%CC%A7o%CC%83es%20Ma%CC%81rio%20Simo%CC%83es%20Gomes%20%26%20Gomes%201.jpeg",
-  "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/hek1lxmz_Instalac%CC%A7o%CC%83es%20Ma%CC%81rio%20Simo%CC%83es%20Gomes%20%26%20Gomes.jpeg"
+  "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/hek1lxmz_Instalac%CC%A7o%CC%83es%20Ma%CC%81rio%20Simo%CC%83es%20Gomes%20%26%20Gomes.jpeg",
+  "https://customer-assets.emergentagent.com/job_6f3e04b3-4e65-4f2f-ab62-cc281e93c9c6/artifacts/4dbjb4o5_Instalac%CC%A7o%CC%83es%20Ma%CC%81rio%20Simo%CC%83es%20Gomes%20%26%20Gomes%201.jpeg"
 ];
 
 export const contactInfo = {
