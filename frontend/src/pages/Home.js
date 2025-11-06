@@ -1121,8 +1121,8 @@ const Home = () => {
 
       {/* Gallery Modal */}
       <Dialog open={galleryOpen} onOpenChange={setGalleryOpen}>
-        <DialogContent className="max-w-2xl w-full p-0 bg-black/95 border-none h-[95vh]">
-          <div className="relative h-full flex items-center justify-center">
+        <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none">
+          <div className="relative">
             {/* Close button */}
             <button
               onClick={() => setGalleryOpen(false)}
@@ -1153,7 +1153,7 @@ const Home = () => {
             <img
               src={storeImages[selectedImageIndex]}
               alt={`Instalações MSGG ${selectedImageIndex + 1}`}
-              className="max-h-[90vh] w-auto object-contain"
+              className="w-full h-[80vh] object-contain"
             />
 
             {/* Image counter */}
