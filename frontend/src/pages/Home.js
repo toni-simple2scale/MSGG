@@ -1118,6 +1118,53 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Gallery Modal */}
+      <Dialog open={galleryOpen} onOpenChange={setGalleryOpen}>
+        <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none">
+          <div className="relative">
+            {/* Close button */}
+            <button
+              onClick={() => setGalleryOpen(false)}
+              className="absolute top-4 right-4 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            {/* Previous button */}
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
+            >
+              <ChevronLeft className="text-white" size={32} />
+            </button>
+
+            {/* Next button */}
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
+            >
+              <ChevronRight className="text-white" size={32} />
+            </button>
+
+            {/* Image */}
+            <img
+              src={storeImages[selectedImageIndex]}
+              alt={`Instalações MSGG ${selectedImageIndex + 1}`}
+              className="w-full h-[80vh] object-contain"
+            />
+
+            {/* Image counter */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+              <p className="text-white font-medium">
+                {selectedImageIndex + 1} / {storeImages.length}
+              </p>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
