@@ -303,9 +303,9 @@ const Home = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url(https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ell86pl4_MSGG%20HERO.png)',
+            backgroundImage: 'url(https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/0asie1gr_MSGG%20HERO.png)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center top',
             backgroundRepeat: 'no-repeat'
           }}
         >
