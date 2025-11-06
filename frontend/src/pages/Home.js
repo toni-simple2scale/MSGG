@@ -943,7 +943,7 @@ const Home = () => {
                 <img 
                   src="https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/0asie1gr_MSGG%20HERO.png" 
                   alt="MSGG - Equipa e Instalações" 
-                  className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
                   <h3 className="text-2xl font-bold text-white mb-2">35 Anos de Experiência</h3>
