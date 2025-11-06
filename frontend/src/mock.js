@@ -5,13 +5,13 @@ export const products = {
     {
       id: 1,
       name: "Tinta Auto",
-      description: "Lisos, Metalizados, Pérolas e mais opções",
+      description: "Lisos, Metalizados, Pérolas e entre outras opções",
       category: "Tintas Automóveis"
     },
     {
       id: 2,
-      name: "Tinta Motociclos",
-      description: "Lisos, Metalizados, Pérolas e acabamentos especiais",
+      name: "Tintas Moto",
+      description: "Lisos, Metalizados, Pérolas e entre outras opções",
       category: "Tintas Motociclos"
     },
     {
