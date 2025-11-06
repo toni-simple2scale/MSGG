@@ -320,11 +320,11 @@ const Home = () => {
             >
               <motion.h1 
                 variants={fadeInUp}
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 sm:mb-6 leading-tight drop-shadow-2xl"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-1 sm:mb-6 leading-tight drop-shadow-2xl"
               >
-                <span className="block sm:inline">Especialistas em Pintura</span>
-                <br />
-                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+                <span className="block sm:inline leading-tight">Especialistas em Pintura</span>
+                <br className="leading-none" />
+                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
                   <span className="text-blue-400">Automóvel</span>
                   <span className="text-white"> e </span>
                   <span className="text-orange-400">Construção Civil</span>
