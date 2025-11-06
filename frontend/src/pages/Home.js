@@ -320,7 +320,7 @@ const Home = () => {
             >
               <motion.h1 
                 variants={fadeInUp}
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 sm:mb-6 leading-tight drop-shadow-2xl"
               >
                 <span className="block sm:inline">Especialistas em Pintura</span>
                 <br />
