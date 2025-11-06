@@ -106,12 +106,10 @@ const Footer = () => {
                 href="https://www.instagram.com/mariosimoesgomesegomes/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors group"
+                className="inline-flex items-center gap-2 text-gray-300 hover:text-pink-400 transition-colors text-sm"
               >
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Instagram size={20} className="text-white" />
-                </div>
-                <span className="text-sm">Instagram</span>
+                <Instagram size={18} />
+                <span>Instagram</span>
               </a>
             </div>
           </div>
