@@ -301,15 +301,13 @@ const Home = () => {
       <section className="relative pt-32 pb-32 px-4 min-h-[85vh] flex items-center">
         {/* Background Image */}
         <div 
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 bg-cover bg-no-repeat bg-[center_top] md:bg-[center_top]"
           style={{
             backgroundImage: 'url(https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/0asie1gr_MSGG%20HERO.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center top',
-            backgroundRepeat: 'no-repeat'
+            backgroundPosition: 'right top'
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
         </div>
 
         {/* Content */}
