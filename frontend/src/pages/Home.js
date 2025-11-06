@@ -345,14 +345,17 @@ const Home = () => {
       <section className="relative pt-64 md:pt-32 pb-32 px-4 min-h-[85vh] flex items-end md:items-center">
         {/* Background Image with Fade-in */}
         <div className="absolute inset-0 z-0">
-          {/* Placeholder/Blur background */}
+          {/* Placeholder/Blur background with subtle animation */}
           <div 
-            className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900"
+            className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 animate-pulse"
             style={{
               opacity: heroImageLoaded ? 0 : 1,
               transition: 'opacity 0.5s ease-in-out'
             }}
-          />
+          >
+            {/* Shimmer effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-shimmer" />
+          </div>
           
           {/* Actual Image */}
           <div 
