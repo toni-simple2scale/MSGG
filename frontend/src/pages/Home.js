@@ -55,7 +55,7 @@ const getProductIcon = (productId) => {
   const iconMap = {
     // Automóvel
     1: Car, // Tinta Auto
-    2: Car, // Tinta Motociclos
+    2: Bike, // Tinta Motociclos
     3: Droplets, // Vernizes Auto 2K
     4: Sparkles, // Massas de Polir/Polish/Ceras
     5: Layers, // Betumes e Primários
