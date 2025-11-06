@@ -325,9 +325,9 @@ const Home = () => {
                 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl"
               >
                 Especialistas em Pintura - 
-                <span className="font-extrabold underline decoration-4 decoration-white/50 underline-offset-8"> Automóvel</span>
+                <span className="text-blue-400">Automóvel</span>
                 <span className="text-white"> e </span>
-                <span className="font-extrabold underline decoration-4 decoration-white/50 underline-offset-8">Construção Civil</span>
+                <span className="text-orange-400">Construção Civil</span>
               </motion.h1>
               <motion.p 
                 variants={fadeInUp}
