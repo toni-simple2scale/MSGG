@@ -1006,6 +1006,9 @@ const Home = () => {
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                  {/* Honeypot field for spam prevention - hidden from users */}
+                  <input type="checkbox" name="botcheck" className="hidden" style={{display: 'none'}} />
+                  
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Nome *</label>
                     <input
