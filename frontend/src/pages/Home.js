@@ -340,21 +340,21 @@ const Home = () => {
               {/* Contact Info */}
               <motion.div 
                 variants={fadeInUp}
-                className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-8"
+                className="flex flex-col sm:flex-row gap-3 sm:gap-8 mb-8"
               >
                 <a 
                   href="tel:+351219673174"
-                  className="inline-flex items-center gap-3 text-xl lg:text-2xl font-bold text-white hover:text-blue-400 transition-colors drop-shadow-lg"
+                  className="inline-flex items-center gap-2 text-base sm:text-xl lg:text-2xl font-bold text-white hover:text-blue-400 transition-colors drop-shadow-lg"
                 >
-                  <Phone size={28} className="text-blue-400" />
-                  +351 219 673 174
+                  <Phone size={20} className="text-blue-400 sm:w-7 sm:h-7" />
+                  <span className="text-sm sm:text-xl lg:text-2xl">+351 219 673 174</span>
                 </a>
                 <a 
                   href="mailto:geral@mariosgomes.com"
-                  className="inline-flex items-center gap-3 text-xl lg:text-2xl font-bold text-white hover:text-orange-400 transition-colors drop-shadow-lg"
+                  className="inline-flex items-center gap-2 text-base sm:text-xl lg:text-2xl font-bold text-white hover:text-orange-400 transition-colors drop-shadow-lg"
                 >
-                  <Mail size={28} className="text-orange-400" />
-                  geral@mariosgomes.com
+                  <Mail size={20} className="text-orange-400 sm:w-7 sm:h-7" />
+                  <span className="text-sm sm:text-xl lg:text-2xl">geral@mariosgomes.com</span>
                 </a>
               </motion.div>
 
