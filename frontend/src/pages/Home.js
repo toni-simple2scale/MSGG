@@ -343,14 +343,29 @@ const Home = () => {
       <SkeletonShimmer />
       {/* Hero Section */}
       <section className="relative pt-64 md:pt-32 pb-32 px-4 min-h-[85vh] flex items-end md:items-center">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-no-repeat bg-[center_top] md:bg-[center_top]"
-          style={{
-            backgroundImage: 'url(https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/0asie1gr_MSGG%20HERO.png)',
-            backgroundPosition: 'right top'
-          }}
-        >
+        {/* Background Image with Fade-in */}
+        <div className="absolute inset-0 z-0">
+          {/* Placeholder/Blur background */}
+          <div 
+            className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900"
+            style={{
+              opacity: heroImageLoaded ? 0 : 1,
+              transition: 'opacity 0.5s ease-in-out'
+            }}
+          />
+          
+          {/* Actual Image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/0asie1gr_MSGG%20HERO.png)',
+              backgroundPosition: 'right top',
+              opacity: heroImageLoaded ? 1 : 0,
+              transition: 'opacity 1s ease-in-out'
+            }}
+          />
+          
+          {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
         </div>
 
