@@ -18,7 +18,7 @@ const Footer = () => {
           <div>
             <img 
               src="https://customer-assets.emergentagent.com/job_823a2b97-7844-41bb-82d6-c92e96ffdff3/artifacts/8podbrez_LOGO%20MSGG.png" 
-              alt="MSGG Logo" 
+              alt="MSGG - Mário Simões Gomes & Gomes - Tintas e Vernizes" 
               className="h-16 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-gray-300 text-sm leading-relaxed">
