@@ -12,7 +12,7 @@ export const products = {
       id: 2,
       name: "Tinta Motociclos",
       description: "Lisos, Metalizados, Pérolas e acabamentos especiais",
-      category: "Tintas Moto"
+      category: "Tintas Motociclos"
     },
     {
       id: 3,
