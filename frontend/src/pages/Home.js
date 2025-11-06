@@ -307,8 +307,9 @@ const Home = () => {
                 variants={fadeInUp}
                 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl"
               >
-                Especialistas em
-                <span className="text-blue-400"> Pintura Automóvel</span>
+                Especialistas em Pintura
+                <span className="text-white"> - </span>
+                <span className="text-blue-400">Automóvel</span>
                 <span className="text-white"> e </span>
                 <span className="text-orange-400">Construção Civil</span>
               </motion.h1>
