@@ -311,7 +311,7 @@ const Home = () => {
         </div>
 
         {/* Content */}
-        <div className="max-w-7xl mx-auto relative z-10 w-full">
+        <div className="max-w-7xl mx-auto relative z-10 w-full pb-12 md:pb-0">
           <div className="max-w-3xl">
             <motion.div
               initial="hidden"
