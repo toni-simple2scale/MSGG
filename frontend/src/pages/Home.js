@@ -296,15 +296,17 @@ const Home = () => {
         email: data.email,
         phone: data.phone || 'Não fornecido',
         message: data.message,
-        subject: 'Novo contacto do site MSGG',
+        subject: 'Novo Contacto do Site MSGG - mariosgomes.com',
         from_name: 'Website MSGG',
-        replyto: data.email
+        replyto: data.email,
+        botcheck: '' // Honeypot field for spam prevention
       };
 
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify(formData),
       });
@@ -315,11 +317,12 @@ const Home = () => {
         toast.success('Mensagem enviada com sucesso! Entraremos em contacto em breve.');
         reset();
       } else {
-        toast.error('Erro ao enviar mensagem. Por favor tente novamente.');
+        toast.error('Erro ao enviar mensagem. Por favor tente novamente ou contacte-nos diretamente.');
       }
     } catch (error) {
       console.error('Error:', error);
-      toast.error('Erro ao enviar mensagem. Por favor tente novamente.');
+      // In production (Vercel), this will work. In localhost, CORS blocks it.
+      toast.error('Erro ao enviar mensagem. Por favor tente novamente ou contacte-nos diretamente.');
     } finally {
       setFormSubmitting(false);
     }
