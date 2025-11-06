@@ -941,7 +941,7 @@ const Home = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800" 
+                  src="https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/0asie1gr_MSGG%20HERO.png" 
                   alt="MSGG - Equipa e Instalações" 
                   className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
