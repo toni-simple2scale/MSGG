@@ -145,17 +145,17 @@ const BrandsCarousel = ({ brands }) => {
         </div>
       </div>
 
-      {/* Navigation Buttons */}
+      {/* Navigation Buttons - Hidden on mobile, shown on large screens */}
       <button
         onClick={scrollPrev}
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10"
+        className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10 items-center justify-center"
         aria-label="Marca anterior"
       >
         <ChevronLeft size={24} className="text-gray-600" />
       </button>
       <button
         onClick={scrollNext}
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10"
+        className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10 items-center justify-center"
         aria-label="Próxima marca"
       >
         <ChevronRight size={24} className="text-gray-600" />
