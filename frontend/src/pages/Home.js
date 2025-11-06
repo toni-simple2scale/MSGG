@@ -288,10 +288,41 @@ const Home = () => {
 
   const onSubmit = async (data) => {
     setFormSubmitting(true);
-    // Show success message
-    toast.success('Mensagem enviada com sucesso! Entraremos em contacto em breve.');
-    reset();
-    setFormSubmitting(false);
+    
+    try {
+      const formData = {
+        access_key: '686be247-175e-40af-b22e-cb3b99ffcd8c',
+        name: data.name,
+        email: data.email,
+        phone: data.phone || 'Não fornecido',
+        message: data.message,
+        subject: 'Novo contacto do site MSGG',
+        from_name: 'Website MSGG',
+        replyto: data.email
+      };
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast.success('Mensagem enviada com sucesso! Entraremos em contacto em breve.');
+        reset();
+      } else {
+        toast.error('Erro ao enviar mensagem. Por favor tente novamente.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error('Erro ao enviar mensagem. Por favor tente novamente.');
+    } finally {
+      setFormSubmitting(false);
+    }
   };
 
   return (
