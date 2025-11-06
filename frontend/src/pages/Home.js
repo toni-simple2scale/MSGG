@@ -261,6 +261,8 @@ const Home = () => {
   const [formSubmitting, setFormSubmitting] = useState(false);
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const [isLoading, setIsLoading] = useState(true);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   // Simulate loading delay for skeleton demonstration
   useEffect(() => {
