@@ -422,15 +422,15 @@ const Home = () => {
 
               <motion.div 
                 variants={fadeInUp}
-                className="flex flex-col sm:flex-row gap-4 mt-8"
+                className="flex flex-col sm:flex-row gap-4 mt-6"
               >
                 <Button 
                   size="lg" 
-                  className="btn-gradient-blue text-white text-lg px-8 py-6 shadow-2xl hover:scale-105 transition-transform"
+                  className="btn-gradient-blue text-white text-base px-6 py-4 shadow-2xl hover:scale-105 transition-transform"
                   onClick={() => document.getElementById('contactos').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Solicitar Orçamento
-                  <ArrowRight className="ml-2" size={20} />
+                  <ArrowRight className="ml-2" size={18} />
                 </Button>
               </motion.div>
             </motion.div>
