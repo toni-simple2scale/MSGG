@@ -394,7 +394,7 @@ const Home = () => {
               </motion.h1>
               <motion.p 
                 variants={fadeInUp}
-                className="text-lg lg:text-xl text-gray-100 mb-6 leading-relaxed drop-shadow-lg"
+                className="text-base lg:text-lg text-gray-100 mb-6 leading-relaxed drop-shadow-lg"
               >
                 Referência em tintas e vernizes para repintura automóvel e construção civil. <span className="whitespace-nowrap">35 anos</span> de experiência, qualidade e assessoria técnica especializada.
               </motion.p>
