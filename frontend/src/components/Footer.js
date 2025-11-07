@@ -155,9 +155,9 @@ const Footer = () => {
               href="https://www.livroreclamacoes.pt/Inicio/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-gray-900 px-6 py-3 rounded-lg transition-colors shadow-lg"
+              className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-900 px-4 py-2 rounded-md transition-colors shadow-md text-sm"
             >
-              <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" fill="none"/>
                 <path d="M4 4h16v16H4V4z" fill="#E31E24"/>
                 <path d="M4 4h16v8H4V4z" fill="#003DA5"/>
@@ -166,7 +166,7 @@ const Footer = () => {
                 <rect x="6" y="14" width="12" height="1.5" fill="white"/>
                 <rect x="6" y="16.5" width="8" height="1.5" fill="white"/>
               </svg>
-              <span className="font-semibold">Livro de Reclamações</span>
+              <span className="font-medium">Livro de Reclamações</span>
             </a>
           </div>
         </div>
