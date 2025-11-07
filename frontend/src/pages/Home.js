@@ -406,16 +406,16 @@ const Home = () => {
               >
                 <a 
                   href="tel:+351219673174"
-                  className="inline-flex items-center gap-2 text-sm sm:text-base lg:text-lg font-semibold text-white hover:text-blue-400 transition-colors drop-shadow-lg"
+                  className="inline-flex items-center gap-2 text-base sm:text-lg lg:text-xl font-bold text-white hover:text-blue-400 transition-colors drop-shadow-lg"
                 >
-                  <Phone size={18} className="text-blue-400 sm:w-5 sm:h-5" />
+                  <Phone size={20} className="text-blue-400 sm:w-6 sm:h-6" />
                   <span>+351 219 673 174</span>
                 </a>
                 <a 
                   href="mailto:geral@mariosgomes.com"
-                  className="inline-flex items-center gap-2 text-sm sm:text-base lg:text-lg font-semibold text-white hover:text-orange-400 transition-colors drop-shadow-lg"
+                  className="inline-flex items-center gap-2 text-base sm:text-lg lg:text-xl font-bold text-white hover:text-orange-400 transition-colors drop-shadow-lg"
                 >
-                  <Mail size={18} className="text-orange-400 sm:w-5 sm:h-5" />
+                  <Mail size={20} className="text-orange-400 sm:w-6 sm:h-6" />
                   <span>geral@mariosgomes.com</span>
                 </a>
               </motion.div>
