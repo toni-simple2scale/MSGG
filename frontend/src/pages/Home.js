@@ -276,7 +276,7 @@ const Home = () => {
   // Preload hero image with fade-in effect
   useEffect(() => {
     const img = new Image();
-    img.src = 'https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/0asie1gr_MSGG%20HERO.png';
+    img.src = 'https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png';
     img.onload = () => {
       setHeroImageLoaded(true);
     };
