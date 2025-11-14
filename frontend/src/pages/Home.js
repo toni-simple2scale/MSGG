@@ -359,10 +359,10 @@ const Home = () => {
           
           {/* Actual Image */}
           <div 
-            className="absolute inset-0 bg-cover bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-no-repeat bg-[right_top] md:bg-[right_top]"
             style={{
               backgroundImage: 'url(https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png)',
-              backgroundPosition: 'right top',
+              backgroundPosition: '75% top',
               opacity: heroImageLoaded ? 1 : 0,
               transition: 'opacity 1s ease-in-out'
             }}
