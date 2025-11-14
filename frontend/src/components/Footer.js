@@ -21,9 +21,23 @@ const Footer = () => {
               alt="MSGG - Mário Simões Gomes & Gomes - Tintas e Vernizes" 
               className="h-16 w-auto mb-4 brightness-0 invert"
             />
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <p className="text-gray-300 text-sm leading-relaxed mb-6">
               Mário Simões Gomes & Gomes, Lda. - Especialistas em tintas e vernizes para repintura automóvel e construção civil com 35 anos de experiência.
             </p>
+            
+            {/* Social Media */}
+            <div className="pt-4 border-t border-gray-700">
+              <h4 className="text-sm font-semibold mb-3">Siga-nos</h4>
+              <a 
+                href="https://www.instagram.com/mariosimoesgomesegomes/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-gray-300 hover:text-pink-400 transition-colors text-sm"
+              >
+                <Instagram size={18} />
+                <span>Instagram</span>
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
