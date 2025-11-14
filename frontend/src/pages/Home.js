@@ -361,7 +361,7 @@ const Home = () => {
           <div 
             className="absolute inset-0 bg-cover bg-no-repeat"
             style={{
-              backgroundImage: 'url(https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/0asie1gr_MSGG%20HERO.png)',
+              backgroundImage: 'url(https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png)',
               backgroundPosition: 'right top',
               opacity: heroImageLoaded ? 1 : 0,
               transition: 'opacity 1s ease-in-out'
