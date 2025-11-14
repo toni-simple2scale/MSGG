@@ -97,10 +97,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Opening Hours & Social */}
+          {/* Opening Hours */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Horário</h3>
-            <div className="flex items-start gap-3 mb-6">
+            <div className="flex items-start gap-3">
               <Clock size={18} className="mt-0.5 flex-shrink-0" />
               <div className="text-gray-300 text-sm space-y-1">
                 <p className="text-gray-300">De segunda a sexta:</p>
@@ -111,20 +111,6 @@ const Footer = () => {
                 <p className="text-gray-300 mt-3">Domingo:</p>
                 <p className="font-medium text-white">Encerrado</p>
               </div>
-            </div>
-            
-            {/* Social Media */}
-            <div className="pt-4 border-t border-gray-700">
-              <h4 className="text-sm font-semibold mb-3">Siga-nos</h4>
-              <a 
-                href="https://www.instagram.com/mariosimoesgomesegomes/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gray-300 hover:text-pink-400 transition-colors text-sm"
-              >
-                <Instagram size={18} />
-                <span>Instagram</span>
-              </a>
             </div>
           </div>
         </div>
