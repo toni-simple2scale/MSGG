@@ -1248,6 +1248,30 @@ const Home = () => {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* About Image Lightbox */}
+      <Dialog open={aboutImageOpen} onOpenChange={setAboutImageOpen}>
+        <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none">
+          <div className="relative">
+            {/* Close button */}
+            <button
+              onClick={() => setAboutImageOpen(false)}
+              className="absolute top-4 right-4 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            {/* Image */}
+            <img
+              src="https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png"
+              alt="Instalações MSGG - 35 Anos de Experiência"
+              className="w-full h-auto"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
