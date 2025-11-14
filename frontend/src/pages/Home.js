@@ -1006,7 +1006,7 @@ const Home = () => {
                 <img 
                   src="https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png" 
                   alt="Instalações MSGG - Loja de tintas e vernizes para automóvel e construção civil em Terrugem, Sintra, com 35 anos de experiência" 
-                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-[400px] object-cover object-[65%_center] md:object-center transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
