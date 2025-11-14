@@ -1005,10 +1005,7 @@ const Home = () => {
             >
               <div 
                 className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer"
-                onClick={() => {
-                  setSelectedImageIndex(0);
-                  setGalleryOpen(true);
-                }}
+                onClick={() => setAboutImageOpen(true)}
               >
                 <img 
                   src="https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png" 
