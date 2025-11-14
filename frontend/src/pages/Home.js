@@ -1002,16 +1002,32 @@ const Home = () => {
               variants={fadeIn}
               className="lg:sticky lg:top-24"
             >
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+              <div 
+                className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer"
+                onClick={() => {
+                  setSelectedImageIndex(0);
+                  setGalleryOpen(true);
+                }}
+              >
                 <img 
                   src="https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png" 
                   alt="Instalações MSGG - Loja de tintas e vernizes para automóvel e construção civil em Terrugem, Sintra, com 35 anos de experiência" 
                   className="w-full h-[400px] object-cover object-[65%_center] md:object-center transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8 pointer-events-none">
                   <h3 className="text-2xl font-bold text-white mb-2">35 Anos de Experiência</h3>
                   <p className="text-gray-200">Compromisso com a excelência e qualidade</p>
+                </div>
+                {/* Click indicator */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="bg-white/90 rounded-full p-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.div>
