@@ -79,7 +79,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={18} className="mt-0.5 flex-shrink-0" />
-                <a href="mailto:geral@mariosgomes.com" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <a href="mailto:geral@mariosgomes.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">
                   {contactInfo.email}
                 </a>
               </li>
