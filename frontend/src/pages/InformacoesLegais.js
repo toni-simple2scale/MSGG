@@ -87,7 +87,7 @@ const InformacoesLegais = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-gray-400" />
-                <a href="mailto:geral@mariosgomes.com" className="hover:text-blue-600 transition-colors">
+                <a href="mailto:geral@mariosgomes.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
                   geral@mariosgomes.com
                 </a>
               </div>
