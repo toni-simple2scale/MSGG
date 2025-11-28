@@ -333,8 +333,8 @@ const PoliticaPrivacidade = () => {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Transferências Internacionais de Dados</h2>
               <p className="text-gray-700">
-                Os seus dados pessoais podem ser transferidos para fora da União Europeia através das ferramentas de analytics 
-                que utilizamos (PostHog e Vercel). Estas transferências são realizadas em conformidade com o RGPD, através de 
+                Os seus dados pessoais podem ser transferidos para fora da União Europeia através da ferramenta de analytics 
+                que utilizamos (Vercel Analytics). Estas transferências são realizadas em conformidade com o RGPD, através de 
                 garantias adequadas, como cláusulas contratuais tipo aprovadas pela Comissão Europeia.
               </p>
             </section>
