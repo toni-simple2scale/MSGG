@@ -1210,12 +1210,12 @@ const Home = () => {
 
       {/* Gallery Modal */}
       <Dialog open={galleryOpen} onOpenChange={setGalleryOpen}>
-        <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none max-h-screen h-screen md:h-auto">
-          <div className="relative h-full flex items-center justify-center">
+        <DialogContent className="max-w-full md:max-w-4xl w-full p-0 bg-white md:bg-black/95 border-none h-screen md:h-auto">
+          <div className="relative h-full w-full">
             {/* Close button */}
             <button
               onClick={() => setGalleryOpen(false)}
-              className="absolute top-4 right-4 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 transition-colors"
+              className="absolute top-4 right-4 z-50 bg-black/30 md:bg-white/10 hover:bg-black/50 md:hover:bg-white/20 rounded-full p-2 transition-colors"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -1225,7 +1225,7 @@ const Home = () => {
             {/* Previous button */}
             <button
               onClick={prevImage}
-              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
+              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 bg-black/30 md:bg-white/10 hover:bg-black/50 md:hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
             >
               <ChevronLeft className="text-white" size={24} />
             </button>
@@ -1233,7 +1233,7 @@ const Home = () => {
             {/* Next button */}
             <button
               onClick={nextImage}
-              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
+              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 bg-black/30 md:bg-white/10 hover:bg-black/50 md:hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
             >
               <ChevronRight className="text-white" size={24} />
             </button>
@@ -1242,7 +1242,7 @@ const Home = () => {
             <img
               src={storeImages[selectedImageIndex]}
               alt={`Instalações MSGG ${selectedImageIndex + 1}`}
-              className="w-full h-full object-contain md:object-contain md:h-[80vh]"
+              className="w-full h-full object-cover md:object-contain md:h-[80vh]"
             />
 
             {/* Image counter */}
