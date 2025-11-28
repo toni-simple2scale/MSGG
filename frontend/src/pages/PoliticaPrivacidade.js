@@ -9,15 +9,6 @@ const PoliticaPrivacidade = () => {
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       <div className="max-w-4xl mx-auto px-4">
-        <Button
-          variant="outline"
-          onClick={() => navigate('/')}
-          className="mb-8"
-        >
-          <ArrowLeft className="mr-2" size={18} />
-          Voltar ao Site
-        </Button>
-
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <div className="flex items-center gap-4 mb-8">
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
