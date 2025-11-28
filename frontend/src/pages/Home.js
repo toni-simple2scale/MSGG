@@ -4,7 +4,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
-import { Dialog, DialogContent } from '../components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from '../components/ui/dialog';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import useEmblaCarousel from 'embla-carousel-react';
