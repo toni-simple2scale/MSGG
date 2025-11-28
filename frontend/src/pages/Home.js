@@ -1336,12 +1336,15 @@ const Home = () => {
             </button>
 
             {/* Image container */}
-            <div className="flex-1 relative flex items-center justify-center">
-              {/* Image */}
-              <img
+            <div className="flex-1 relative flex items-center justify-center overflow-hidden">
+              {/* Image with transition */}
+              <motion.img
                 src="https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png"
                 alt="Instalações MSGG - 35 Anos de Experiência"
                 className="w-full h-full object-contain md:object-contain md:h-auto"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
               />
             </div>
 
