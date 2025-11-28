@@ -166,8 +166,8 @@ const PoliticaPrivacidade = () => {
                   pela plataforma WhatsApp de acordo com a sua política de privacidade
                 </li>
                 <li>
-                  <strong>Ferramentas de Analytics:</strong> utilizamos PostHog e Vercel Analytics para análise estatística 
-                  do tráfego do site (dados anonimizados sempre que possível)
+                  <strong>Ferramentas de Analytics:</strong> utilizamos Vercel Analytics para análise estatística 
+                  do tráfego do site (dados anonimizados)
                 </li>
                 <li>
                   <strong>Obrigações legais:</strong> se formos obrigados por lei ou ordem judicial
