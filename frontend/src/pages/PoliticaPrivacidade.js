@@ -98,7 +98,7 @@ const PoliticaPrivacidade = () => {
                     <li><strong>Preferências de cookies</strong></li>
                   </ul>
                   <p className="text-sm text-gray-600 mt-3">
-                    Estes dados são recolhidos através de cookies e ferramentas de analytics (PostHog e Vercel Analytics) 
+                    Estes dados são recolhidos através de ferramentas de analytics (Vercel Analytics) 
                     para melhorar a experiência do utilizador e otimizar o desempenho do site.
                   </p>
                 </div>
