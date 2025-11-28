@@ -303,7 +303,7 @@ const Home = () => {
     try {
       const formData = {
         access_key: '686be247-175e-40af-b22e-cb3b99ffcd8c',
-        subject: 'Novo Contacto do Site MSGG - mariosgomes.com',
+        subject: 'Novo Contacto do Site - mariosgomes.com',
         from_name: 'Website MSGG',
         replyto: data.email,
         botcheck: '', // Honeypot field for spam prevention
