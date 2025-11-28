@@ -1241,17 +1241,17 @@ const Home = () => {
 
             {/* Image container */}
             <div className="flex-1 relative flex items-center justify-center overflow-hidden">
-              {/* Image with transition */}
-              <AnimatePresence mode="wait">
+              {/* Image with smooth fade transition */}
+              <AnimatePresence mode="sync">
                 <motion.img
                   key={selectedImageIndex}
                   src={storeImages[selectedImageIndex]}
                   alt={`Instalações MSGG ${selectedImageIndex + 1}`}
-                  className="w-full h-full object-contain md:object-contain md:h-[80vh]"
-                  initial={{ opacity: 0, x: 100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -100 }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="w-full h-full object-contain md:object-contain md:h-[80vh] absolute inset-0"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
                 />
               </AnimatePresence>
             </div>
