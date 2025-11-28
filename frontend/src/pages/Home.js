@@ -1219,12 +1219,12 @@ const Home = () => {
 
       {/* Gallery Modal */}
       <Dialog open={galleryOpen} onOpenChange={setGalleryOpen}>
-        <DialogContent className="max-w-full md:max-w-4xl w-full p-0 bg-white md:bg-black/95 border-none h-screen md:h-auto overflow-hidden [&>button]:hidden">
+        <DialogContent className="max-w-full md:max-w-4xl w-full p-0 bg-white md:bg-black/95 border-none overflow-hidden [&>button]:hidden max-h-screen md:max-h-[90vh]">
           <DialogTitle className="sr-only">Galeria de Imagens das Instalações</DialogTitle>
           <DialogDescription className="sr-only">
             Navegue pelas fotografias das instalações da MSGG usando as setas de navegação
           </DialogDescription>
-          <div className="relative h-full w-full flex flex-col">
+          <div className="relative w-full flex flex-col h-screen md:h-[80vh]">
             {/* Top bar with close button - Always visible */}
             <div className="md:hidden absolute top-0 left-0 right-0 z-[60] bg-gradient-to-b from-black/60 to-transparent p-4 flex justify-between items-center">
               <button
