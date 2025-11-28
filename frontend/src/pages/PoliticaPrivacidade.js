@@ -307,7 +307,7 @@ const PoliticaPrivacidade = () => {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center gap-2">
                     <Mail size={16} />
-                    <a href="mailto:geral@mariosgomes.com" className="text-blue-600 hover:underline">
+                    <a href="mailto:geral@mariosgomes.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                       geral@mariosgomes.com
                     </a>
                   </li>
