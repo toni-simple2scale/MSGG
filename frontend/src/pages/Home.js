@@ -8,6 +8,7 @@ import { Dialog, DialogContent } from '../components/ui/dialog';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import useEmblaCarousel from 'embla-carousel-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'framer-motion';
 import AnimatedCounter from '../components/AnimatedCounter';
