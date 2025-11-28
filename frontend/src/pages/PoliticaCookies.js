@@ -163,29 +163,6 @@ const PoliticaCookies = () => {
                       <h4 className="font-semibold text-gray-900 mb-3">Cookies de Analytics Utilizados:</h4>
                       <div className="space-y-4">
                         <div className="border-l-4 border-orange-600 pl-4">
-                          <div className="font-semibold text-gray-900">PostHog Analytics</div>
-                          <div className="text-sm text-gray-600 mt-1">
-                            <strong>Finalidade:</strong> Análise do comportamento dos utilizadores, páginas visitadas, 
-                            tempo de permanência e jornada do utilizador
-                          </div>
-                          <div className="text-sm text-gray-600">
-                            <strong>Cookies:</strong> ph_*, distinct_id
-                          </div>
-                          <div className="text-sm text-gray-600">
-                            <strong>Duração:</strong> 1 ano
-                          </div>
-                          <div className="text-sm text-gray-600">
-                            <strong>Fornecedor:</strong> PostHog Inc. (terceiro)
-                          </div>
-                          <div className="text-sm text-gray-600">
-                            <strong>Mais informações:</strong>{' '}
-                            <a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">
-                              posthog.com/privacy
-                            </a>
-                          </div>
-                        </div>
-
-                        <div className="border-l-4 border-orange-600 pl-4">
                           <div className="font-semibold text-gray-900">Vercel Analytics</div>
                           <div className="text-sm text-gray-600 mt-1">
                             <strong>Finalidade:</strong> Monitorização de desempenho do website, velocidade de carregamento 
