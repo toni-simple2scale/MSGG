@@ -1279,16 +1279,16 @@ const Home = () => {
             {/* Desktop navigation buttons - Visible and prominent */}
             <button
               onClick={prevImage}
-              className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-[70] bg-white hover:bg-gray-100 rounded-full p-4 transition-all shadow-2xl items-center justify-center hover:scale-110"
+              className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-[70] bg-white hover:bg-gray-100 rounded-full p-3 transition-all shadow-xl items-center justify-center hover:scale-105"
             >
-              <ChevronLeft className="text-gray-900" size={40} strokeWidth={3} />
+              <ChevronLeft className="text-gray-900" size={24} strokeWidth={2.5} />
             </button>
 
             <button
               onClick={nextImage}
-              className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-[70] bg-white hover:bg-gray-100 rounded-full p-4 transition-all shadow-2xl items-center justify-center hover:scale-110"
+              className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-[70] bg-white hover:bg-gray-100 rounded-full p-3 transition-all shadow-xl items-center justify-center hover:scale-105"
             >
-              <ChevronRight className="text-gray-900" size={40} strokeWidth={3} />
+              <ChevronRight className="text-gray-900" size={24} strokeWidth={2.5} />
             </button>
 
             {/* Image counter */}
