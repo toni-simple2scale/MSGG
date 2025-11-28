@@ -1210,51 +1210,86 @@ const Home = () => {
 
       {/* Gallery Modal */}
       <Dialog open={galleryOpen} onOpenChange={setGalleryOpen}>
-        <DialogContent className="max-w-full md:max-w-4xl w-full p-0 bg-white md:bg-black/95 border-none h-screen md:h-auto">
-          <div className="relative h-full w-full">
-            {/* Close button - Top right */}
+        <DialogContent className="max-w-full md:max-w-4xl w-full p-0 bg-white md:bg-black/95 border-none h-screen md:h-auto overflow-hidden">
+          <div className="relative h-full w-full flex flex-col">
+            {/* Top bar with close button - Always visible */}
+            <div className="md:hidden absolute top-0 left-0 right-0 z-[60] bg-gradient-to-b from-black/60 to-transparent p-4 flex justify-between items-center">
+              <button
+                onClick={() => setGalleryOpen(false)}
+                className="bg-red-600 hover:bg-red-700 rounded-full p-3 shadow-lg transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <div className="bg-black/50 px-4 py-2 rounded-full">
+                <p className="text-white text-sm font-medium">
+                  {selectedImageIndex + 1} / {storeImages.length}
+                </p>
+              </div>
+            </div>
+
+            {/* Desktop close button */}
             <button
               onClick={() => setGalleryOpen(false)}
-              className="absolute top-4 right-4 z-50 bg-red-600 hover:bg-red-700 md:bg-white/10 md:hover:bg-white/20 rounded-full p-3 shadow-lg transition-colors"
+              className="hidden md:block absolute top-4 right-4 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 transition-colors"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
 
-            {/* Close button - Bottom center (Mobile only) */}
-            <button
-              onClick={() => setGalleryOpen(false)}
-              className="md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 z-50 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full shadow-xl transition-colors flex items-center gap-2"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-              <span className="text-white font-semibold">Fechar</span>
-            </button>
+            {/* Image container */}
+            <div className="flex-1 relative flex items-center justify-center">
+              {/* Image */}
+              <img
+                src={storeImages[selectedImageIndex]}
+                alt={`Instalações MSGG ${selectedImageIndex + 1}`}
+                className="w-full h-full object-contain md:object-contain md:h-[80vh]"
+              />
+            </div>
 
-            {/* Previous button */}
+            {/* Bottom navigation bar - Mobile */}
+            <div className="md:hidden absolute bottom-0 left-0 right-0 z-[60] bg-gradient-to-t from-black/60 to-transparent p-4 flex justify-between items-center gap-4">
+              <button
+                onClick={prevImage}
+                className="bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-colors"
+              >
+                <ChevronLeft className="text-gray-900" size={28} />
+              </button>
+              
+              <button
+                onClick={() => setGalleryOpen(false)}
+                className="flex-1 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full shadow-xl transition-colors flex items-center justify-center gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <span className="text-white font-semibold">Fechar</span>
+              </button>
+              
+              <button
+                onClick={nextImage}
+                className="bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-colors"
+              >
+                <ChevronRight className="text-gray-900" size={28} />
+              </button>
+            </div>
+
+            {/* Desktop navigation buttons */}
             <button
               onClick={prevImage}
-              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 bg-black/50 md:bg-white/10 hover:bg-black/70 md:hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
+              className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
             >
-              <ChevronLeft className="text-white" size={24} />
+              <ChevronLeft className="text-white" size={32} />
             </button>
 
-            {/* Next button */}
             <button
               onClick={nextImage}
-              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 bg-black/50 md:bg-white/10 hover:bg-black/70 md:hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
+              className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
             >
-              <ChevronRight className="text-white" size={24} />
+              <ChevronRight className="text-white" size={32} />
             </button>
-
-            {/* Image */}
-            <img
-              src={storeImages[selectedImageIndex]}
-              alt={`Instalações MSGG ${selectedImageIndex + 1}`}
-              className="w-full h-full object-cover md:object-contain md:h-[80vh]"
-            />
 
             {/* Image counter */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
