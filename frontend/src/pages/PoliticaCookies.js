@@ -473,7 +473,7 @@ const PoliticaCookies = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-3">
                   <Mail className="text-blue-600" size={24} />
-                  <a href="mailto:geral@mariosgomes.com" className="text-blue-600 hover:underline font-medium">
+                  <a href="mailto:geral@mariosgomes.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
                     geral@mariosgomes.com
                   </a>
                 </div>
