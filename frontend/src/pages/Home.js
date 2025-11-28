@@ -466,7 +466,7 @@ const Home = () => {
               <TabsTrigger value="construcao" className="text-base px-6 py-3">Construção Civil</TabsTrigger>
               <TabsTrigger value="sprays" className="text-base px-6 py-3">Sprays</TabsTrigger>
               <TabsTrigger value="acessoriosAuto" className="text-base px-6 py-3">Acessórios Auto</TabsTrigger>
-              <TabsTrigger value="acessoriosConstrucao" className="text-base px-6 py-3">Acessórios CC</TabsTrigger>
+              <TabsTrigger value="acessoriosConstrucao" className="text-base px-6 py-3">Acessórios Construção Civil</TabsTrigger>
             </TabsList>
 
             <TabsContent value="automovel">
