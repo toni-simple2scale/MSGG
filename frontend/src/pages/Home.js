@@ -1212,20 +1212,31 @@ const Home = () => {
       <Dialog open={galleryOpen} onOpenChange={setGalleryOpen}>
         <DialogContent className="max-w-full md:max-w-4xl w-full p-0 bg-white md:bg-black/95 border-none h-screen md:h-auto">
           <div className="relative h-full w-full">
-            {/* Close button */}
+            {/* Close button - Top right */}
             <button
               onClick={() => setGalleryOpen(false)}
-              className="absolute top-4 right-4 z-50 bg-black/30 md:bg-white/10 hover:bg-black/50 md:hover:bg-white/20 rounded-full p-2 transition-colors"
+              className="absolute top-4 right-4 z-50 bg-red-600 hover:bg-red-700 md:bg-white/10 md:hover:bg-white/20 rounded-full p-3 shadow-lg transition-colors"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
 
+            {/* Close button - Bottom center (Mobile only) */}
+            <button
+              onClick={() => setGalleryOpen(false)}
+              className="md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 z-50 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full shadow-xl transition-colors flex items-center gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span className="text-white font-semibold">Fechar</span>
+            </button>
+
             {/* Previous button */}
             <button
               onClick={prevImage}
-              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 bg-black/30 md:bg-white/10 hover:bg-black/50 md:hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
+              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 bg-black/50 md:bg-white/10 hover:bg-black/70 md:hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
             >
               <ChevronLeft className="text-white" size={24} />
             </button>
@@ -1233,7 +1244,7 @@ const Home = () => {
             {/* Next button */}
             <button
               onClick={nextImage}
-              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 bg-black/30 md:bg-white/10 hover:bg-black/50 md:hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
+              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 bg-black/50 md:bg-white/10 hover:bg-black/70 md:hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
             >
               <ChevronRight className="text-white" size={24} />
             </button>
