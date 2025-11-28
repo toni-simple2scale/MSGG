@@ -63,7 +63,7 @@ const PoliticaPrivacidade = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail size={18} />
-                    <a href="mailto:geral@mariosgomes.com" className="text-blue-600 hover:underline">
+                    <a href="mailto:geral@mariosgomes.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                       geral@mariosgomes.com
                     </a>
                   </div>
