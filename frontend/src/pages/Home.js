@@ -1276,19 +1276,19 @@ const Home = () => {
               </button>
             </div>
 
-            {/* Desktop navigation buttons */}
+            {/* Desktop navigation buttons - Outside the image */}
             <button
               onClick={prevImage}
-              className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
+              className="hidden md:flex absolute -left-20 top-1/2 -translate-y-1/2 z-50 bg-white hover:bg-gray-100 rounded-full p-4 transition-colors shadow-xl items-center justify-center"
             >
-              <ChevronLeft className="text-white" size={32} />
+              <ChevronLeft className="text-gray-900" size={32} />
             </button>
 
             <button
               onClick={nextImage}
-              className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
+              className="hidden md:flex absolute -right-20 top-1/2 -translate-y-1/2 z-50 bg-white hover:bg-gray-100 rounded-full p-4 transition-colors shadow-xl items-center justify-center"
             >
-              <ChevronRight className="text-white" size={32} />
+              <ChevronRight className="text-gray-900" size={32} />
             </button>
 
             {/* Image counter */}
