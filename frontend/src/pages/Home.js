@@ -1303,7 +1303,7 @@ const Home = () => {
 
       {/* About Image Lightbox */}
       <Dialog open={aboutImageOpen} onOpenChange={setAboutImageOpen}>
-        <DialogContent className="max-w-full md:max-w-4xl w-full p-0 bg-white md:bg-black/95 border-none h-screen md:h-auto overflow-hidden">
+        <DialogContent className="max-w-full md:max-w-4xl w-full p-0 bg-white md:bg-black/95 border-none h-screen md:h-auto overflow-hidden [&>button]:hidden">
           <div className="relative h-full w-full flex flex-col">
             {/* Top bar with close button - Mobile */}
             <div className="md:hidden absolute top-0 left-0 right-0 z-[60] bg-gradient-to-b from-black/60 to-transparent p-4 flex justify-end items-center">
