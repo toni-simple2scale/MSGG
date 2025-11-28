@@ -847,7 +847,7 @@ const Home = () => {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">As Nossas Instalações</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Visite a nossa loja física em Terrugem, Sintra, onde encontrará um vasto stock de produtos das melhores marcas.
+                Visite a nossa loja física em Sintra, onde encontrará um vasto stock de produtos das melhores marcas.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
