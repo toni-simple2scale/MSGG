@@ -416,6 +416,8 @@ const Home = () => {
                 </a>
                 <a 
                   href="mailto:geral@mariosgomes.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-base sm:text-lg lg:text-xl font-bold text-white hover:text-orange-400 transition-colors drop-shadow-lg"
                 >
                   <Mail size={20} className="text-orange-400 sm:w-6 sm:h-6" />
