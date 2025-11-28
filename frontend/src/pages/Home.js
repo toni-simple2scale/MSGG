@@ -1210,8 +1210,8 @@ const Home = () => {
 
       {/* Gallery Modal */}
       <Dialog open={galleryOpen} onOpenChange={setGalleryOpen}>
-        <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none">
-          <div className="relative">
+        <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none max-h-screen h-screen md:h-auto">
+          <div className="relative h-full flex items-center justify-center">
             {/* Close button */}
             <button
               onClick={() => setGalleryOpen(false)}
@@ -1225,24 +1225,24 @@ const Home = () => {
             {/* Previous button */}
             <button
               onClick={prevImage}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
+              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
             >
-              <ChevronLeft className="text-white" size={32} />
+              <ChevronLeft className="text-white" size={24} />
             </button>
 
             {/* Next button */}
             <button
               onClick={nextImage}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
+              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 md:p-3 transition-colors"
             >
-              <ChevronRight className="text-white" size={32} />
+              <ChevronRight className="text-white" size={24} />
             </button>
 
             {/* Image */}
             <img
               src={storeImages[selectedImageIndex]}
               alt={`Instalações MSGG ${selectedImageIndex + 1}`}
-              className="w-full h-[80vh] object-contain"
+              className="w-full h-full object-contain md:object-contain md:h-[80vh]"
             />
 
             {/* Image counter */}
