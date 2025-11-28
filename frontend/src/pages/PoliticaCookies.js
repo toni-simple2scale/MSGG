@@ -317,13 +317,6 @@ const PoliticaCookies = () => {
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-orange-600 rounded-full mt-2" />
                     <div>
-                      <strong className="text-gray-900">PostHog:</strong>
-                      <span className="text-gray-700 ml-2">Plataforma de análise de produto e comportamento do utilizador</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-orange-600 rounded-full mt-2" />
-                    <div>
                       <strong className="text-gray-900">Vercel:</strong>
                       <span className="text-gray-700 ml-2">Plataforma de hospedagem e analytics de desempenho</span>
                     </div>
