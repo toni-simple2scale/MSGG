@@ -1303,24 +1303,52 @@ const Home = () => {
 
       {/* About Image Lightbox */}
       <Dialog open={aboutImageOpen} onOpenChange={setAboutImageOpen}>
-        <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none">
-          <div className="relative">
-            {/* Close button */}
+        <DialogContent className="max-w-full md:max-w-4xl w-full p-0 bg-white md:bg-black/95 border-none h-screen md:h-auto overflow-hidden">
+          <div className="relative h-full w-full flex flex-col">
+            {/* Top bar with close button - Mobile */}
+            <div className="md:hidden absolute top-0 left-0 right-0 z-[60] bg-gradient-to-b from-black/60 to-transparent p-4 flex justify-end items-center">
+              <button
+                onClick={() => setAboutImageOpen(false)}
+                className="bg-red-600 hover:bg-red-700 rounded-full p-3 shadow-lg transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Desktop close button */}
             <button
               onClick={() => setAboutImageOpen(false)}
-              className="absolute top-4 right-4 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 transition-colors"
+              className="hidden md:block absolute top-4 right-4 z-50 bg-white/10 hover:bg-white/20 rounded-full p-2 transition-colors"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
 
-            {/* Image */}
-            <img
-              src="https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png"
-              alt="Instalações MSGG - 35 Anos de Experiência"
-              className="w-full h-auto"
-            />
+            {/* Image container */}
+            <div className="flex-1 relative flex items-center justify-center">
+              {/* Image */}
+              <img
+                src="https://customer-assets.emergentagent.com/job_varnish-hub/artifacts/ud3jfv1w_MSGG%20HERO.png"
+                alt="Instalações MSGG - 35 Anos de Experiência"
+                className="w-full h-full object-contain md:object-contain md:h-auto"
+              />
+            </div>
+
+            {/* Bottom button bar - Mobile */}
+            <div className="md:hidden absolute bottom-0 left-0 right-0 z-[60] bg-gradient-to-t from-black/60 to-transparent p-4">
+              <button
+                onClick={() => setAboutImageOpen(false)}
+                className="w-full bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full shadow-xl transition-colors flex items-center justify-center gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <span className="text-white font-semibold">Fechar</span>
+              </button>
+            </div>
           </div>
         </DialogContent>
       </Dialog>
