@@ -1276,19 +1276,19 @@ const Home = () => {
               </button>
             </div>
 
-            {/* Desktop navigation buttons - Outside the image */}
+            {/* Desktop navigation buttons - Visible and prominent */}
             <button
               onClick={prevImage}
-              className="hidden md:flex absolute -left-20 top-1/2 -translate-y-1/2 z-50 bg-white hover:bg-gray-100 rounded-full p-4 transition-colors shadow-xl items-center justify-center"
+              className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-[70] bg-white hover:bg-gray-100 rounded-full p-4 transition-all shadow-2xl items-center justify-center hover:scale-110"
             >
-              <ChevronLeft className="text-gray-900" size={32} />
+              <ChevronLeft className="text-gray-900" size={40} strokeWidth={3} />
             </button>
 
             <button
               onClick={nextImage}
-              className="hidden md:flex absolute -right-20 top-1/2 -translate-y-1/2 z-50 bg-white hover:bg-gray-100 rounded-full p-4 transition-colors shadow-xl items-center justify-center"
+              className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-[70] bg-white hover:bg-gray-100 rounded-full p-4 transition-all shadow-2xl items-center justify-center hover:scale-110"
             >
-              <ChevronRight className="text-gray-900" size={32} />
+              <ChevronRight className="text-gray-900" size={40} strokeWidth={3} />
             </button>
 
             {/* Image counter */}
