@@ -1134,7 +1134,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                      <a href="mailto:geral@mariosgomes.com" className="text-gray-900 hover:text-orange-600 transition-colors">
+                      <a href="mailto:geral@mariosgomes.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-orange-600 transition-colors">
                         {contactInfo.email}
                       </a>
                     </div>
